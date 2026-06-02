@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andy Wong | Software Engineer & Entrepreneur</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">&lt;Andy<span>Wong</span>/&gt;</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <div class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#certifications"><i class="fas fa-certificate"></i> Certs</a></li>
+          <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    
+    <section id="about" class="hero" style="margin-top: 4rem;">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1>Andy Wong</h1>
+          <p class="aka">aka Double A</p>
+          <p class="lead">Software Engineer & Entrepreneur | CPEG @HKUST </p>
+          <p class="lead">CEO @Gradisen</p>
+
+          <div class="hero-cta" style="margin-top:1rem;">
+            <a class="btn" href="#projects"><i class="fas fa-rocket"></i> View Projects</a>
+            <a class="btn btn-ghost" href="#contact"><i class="fas fa-paper-plane"></i> Get in touch</a>
+          </div>
+
+          <div class="card" style="margin-top:1.5rem;">
+            <h3>About Me</h3>
+            <p style="margin-top: 0.5rem;">
+              I am a motivated Computer Engineering student at HKUST. Associate degree from HKU SPACE with Principal's Honours List. Strong technical skills in Python, cloud computing, IoT, and edge AI. Co-founder & CEO of Gradisen, actively building real-world products. Cadet Leader at St. John Ambulance.
+            </p>
+          </div>
+        </div>
+
+        <aside class="hero-aside">
+          <div class="card highlight">
+            <h3>Current</h3>
+            <p>Building GDSense — Autonomous patrol robot (Edge AI, ROS, Jetson).</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2><i class="fas fa-book-open"></i> Education</h2>
+      
+      <div class="card">
+        <div class="card-meta">2025 — 2028</div>
+        <h3>The Hong Kong University of Science and Technology</h3>
+        <p style="color: var(--text-main); margin-bottom: 0.5rem;">Bachelor of Engineering – Computer Engineering</p>
+        <p>Pursuing BEng in Computer Engineering.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-meta">2023 — 2025</div>
+        <h3>HKU SPACE</h3>
+        <p style="color: var(--text-main); margin-bottom: 0.5rem;">Associate’s Degree – Engineering (Computer Science)</p>
+        <p><strong>Graduate with Merit, CGPA 3.61, Principal's Honours List 2024-2025</strong> </p>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2><i class="fas fa-award"></i> Licenses & Certifications</h2>
+      
+      <div class="card">
+        <div class="card-meta">Issued Jun 2026</div>
+        <h3>Protecting Business Innovations via Strategy</h3>
+        <p>HKUST</p>
+      </div>
+
+      <div class="card">
+        <div class="card-meta">Issued May 2026</div>
+        <h3>Entrepreneurship 101 Training Program</h3>
+        <p>HKUST Entrepreneurship Center</p>
+      </div>
+
+      <div class="card">
+        <div class="card-meta">Issued Feb 2026</div>
+        <h3>IOT Data Hackathon 2026 – Team NovaForge</h3>
+        <p>GSI Hong Kong</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2><i class="fas fa-cube"></i> Projects</h2>
+
+      <div class="card project-card">
+        <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white; min-height: 180px; border-radius: 8px; margin-bottom: 1rem;">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="card-meta">Apr 2026 — Present</div>
+        <h3 style="display: flex; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <i class="fas fa-check-circle" style="color: var(--accent-primary); font-size: 1.1rem;"></i> GDSense
+          <a href="https://gradisen.com" target="_blank" class="btn-gradisen" title="Visit Gradisen">
+            <img src="images/gradisen-logo.png" alt="Gradisen" class="gradisen-logo">
+          </a>
+        </h3>
+        <p style="margin-bottom: 1rem; margin-top: 0.5rem;">
+          An autonomous patrol robot designed for small-to-medium warehouses to detect packaging damage and verify SKUs without infrastructure modifications. Built on an NVIDIA Jetson edge-AI pipeline with ROS, it integrates a YOLO-based vision model, RGB-D camera, and 2D LiDAR to navigate fixed routes and identify structural anomalies externally with over 80% accuracy.
+        </p>
+        <div>
+          <span class="tech-tag"><i class="fas fa-microchip"></i> Robotics (ROS)</span>
+          <span class="tech-tag"><i class="fas fa-brain"></i> Edge AI (Jetson)</span>
+          <span class="tech-tag"><i class="fas fa-eye"></i> Computer Vision (YOLO)</span>
+          <span class="tech-tag"><i class="fas fa-database"></i> Sensor Fusion (LiDAR/RGB-D)</span>
+          <span class="tech-tag"><i class="fas fa-compass"></i> Autonomous Navigation</span>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white; min-height: 180px; border-radius: 8px; margin-bottom: 1rem;">
+          <i class="fas fa-cube"></i>
+        </div>
+        <div class="card-meta">Dec 2025 — Apr 2026</div>
+        <h3><i class="fas fa-check-circle" style="color: var(--accent-primary); font-size: 1.1rem;"></i> NovaSense</h3>
+        <p style="margin-bottom: 1rem;">
+          An advanced Edge AI system for warehouse inventory counting and volumetric estimation. Evolved from a YOLO bounding-box model into a sophisticated 2D-3D spatial fusion pipeline combining Grounding DINO, SAM, and MASt3R. Engineered a custom point-cloud denoising engine and elevation map voxelization to accurately measure irregular cargo shapes.
+        </p>
+        <div>
+          <span class="tech-tag"><i class="fas fa-cube"></i> 3D Reconstruction</span>
+          <span class="tech-tag"><i class="fas fa-network-wired"></i> Spatial Fusion</span>
+          <span class="tech-tag"><i class="fas fa-image"></i> Computer Vision</span>
+          <span class="tech-tag"><i class="fas fa-bolt"></i> Edge AI</span>
+          <span class="tech-tag"><i class="fas fa-cloud"></i> Point Cloud Processing</span>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white; min-height: 180px; border-radius: 8px; margin-bottom: 1rem;">
+          <i class="fas fa-chair"></i>
+        </div>
+        <div class="card-meta">Sep 2022 — May 2023</div>
+        <h3><i class="fas fa-check-circle" style="color: var(--accent-primary); font-size: 1.1rem;"></i> Sitting Director</h3>
+        <p style="margin-bottom: 1rem;">
+          A smart chair system utilizing an ESP-32, FSRs, and infrared sensors to detect and correct poor posture in real time. Implemented on-device pose estimation via TensorFlow Lite and Google MoveNet, syncing data to a custom Android app via Firebase and BLE. Designed 3D-printed mechanical components for physical posture adjustment.
+        </p>
+        <div>
+          <span class="tech-tag"><i class="fas fa-microchip"></i> IoT (ESP-32)</span>
+          <span class="tech-tag"><i class="fas fa-brain"></i> TensorFlow Lite</span>
+          <span class="tech-tag"><i class="fas fa-mobile-alt"></i> Android (Java)</span>
+          <span class="tech-tag"><i class="fas fa-database"></i> Firebase</span>
+          <span class="tech-tag"><i class="fas fa-cog"></i> Hardware Integration</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2><i class="fas fa-handshake"></i> Connect</h2>
+      <div class="contact-icons">
+        <a href="mailto:andywong@gradisen.com" class="icon-link" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        
+        <a href="https://wa.me/85255727280" target="_blank" class="icon-link" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/sau-yu-wong-192387375" target="_blank" class="icon-link" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        
+        <a href="https://github.com/DoubleA0605" target="_blank" class="icon-link" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://gradisen.com" target="_blank" class="icon-link" title="Gradisen">
+          <img src="images/gradisen-logo.png" alt="Gradisen" class="gradisen-logo-icon">
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© 2026 Andy Wong · Built for portfolio</small>
+    </div>
+  </footer>
+
+</body>
+</html>
