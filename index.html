@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andy Wong | Software Engineer & Entrepreneur</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">&lt;Andy<span>Wong</span>/&gt;</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    
+    <section id="about" style="margin-top: 4rem;">
+      <h1>Andy Wong</h1>
+      <p style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 0.5rem;">
+        Software Engineer & Entrepreneur | CPEG @HKUST
+      </p>
+      <p style="margin-bottom: 2rem; font-family: 'Courier New', monospace; font-size: 0.9rem;">
+        <span style="color: #4ade80;">> Location:</span> Hong Kong SAR<br>
+      </p>
+      
+      <div class="card">
+        <h3>About Me</h3>
+        <p style="margin-top: 0.5rem;">
+          I am a motivated Computer Engineering student at HKUST. Associate degree from HKU SPACE with Principal's Honours List. Strong technical skills in Python, cloud computing, IoT, and edge AI. Co-founder & CEO of Gradisen, actively building real-world products. Cadet Leader at St. John Ambulance.
+        </p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      
+      <div class="card">
+        <div class="card-meta">2025 — 2028</div>
+        <h3>The Hong Kong University of Science and Technology</h3>
+        <p style="color: var(--text-main); margin-bottom: 0.5rem;">Bachelor of Engineering – Computer Engineering</p>
+        <p>Pursuing BEng in Computer Engineering.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-meta">2023 — 2025</div>
+        <h3>HKU SPACE</h3>
+        <p style="color: var(--text-main); margin-bottom: 0.5rem;">Associate’s Degree – Engineering (Computer Science)</p>
+        <p><strong>Graduate with Merit, CGPA 3.61, Principal's Honours List 2024-2025</strong> </p>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Licenses & Certifications</h2>
+      
+      <div class="card">
+        <div class="card-meta">Issued Jun 2026 · Credential ID: 52EFP6P2YM8</div>
+        <h3>Protecting Business Innovations via Strategy</h3>
+        <p>HKUST</p>
+      </div>
+
+      <div class="card">
+        <div class="card-meta">Issued May 2026</div>
+        <h3>Entrepreneurship 101 Training Program</h3>
+        <p>HKUST Entrepreneurship Center</p>
+      </div>
+
+      <div class="card">
+        <div class="card-meta">Issued Feb 2026</div>
+        <h3>IOT Data Hackathon 2026 – Team NovaForge</h3>
+        <p>GSI Hong Kong</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="card">
+        <div class="card-meta">Apr 2026 — Present</div>
+        <h3 style="display: flex; align-items: center; flex-wrap: wrap; gap: 12px;">
+          GDSense
+          <a href="https://gradisen.com" target="_blank" style="font-size: 0.85rem; color: var(--accent-primary); text-decoration: none; border: 1px solid var(--accent-primary); padding: 2px 10px; border-radius: 4px; font-family: 'Courier New', monospace; transition: all 0.2s ease;" onmouseover="this.style.background='rgba(56, 189, 248, 0.1)'" onmouseout="this.style.background='transparent'">
+            Visit gradisen.com ↗
+          </a>
+        </h3>
+        <p style="margin-bottom: 1rem; margin-top: 0.5rem;">
+          An autonomous patrol robot designed for small-to-medium warehouses to detect packaging damage and verify SKUs without infrastructure modifications. Built on an NVIDIA Jetson edge-AI pipeline with ROS, it integrates a YOLO-based vision model, RGB-D camera, and 2D LiDAR to navigate fixed routes and identify structural anomalies externally with over 80% accuracy.
+        </p>
+        <div>
+          <span class="tech-tag">Robotics (ROS)</span>
+          <span class="tech-tag">Edge AI (Jetson)</span>
+          <span class="tech-tag">Computer Vision (YOLO)</span>
+          <span class="tech-tag">Sensor Fusion (LiDAR/RGB-D)</span>
+          <span class="tech-tag">Autonomous Navigation</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-meta">Dec 2025 — Apr 2026</div>
+        <h3>NovaSense</h3>
+        <p style="margin-bottom: 1rem;">
+          An advanced Edge AI system for warehouse inventory counting and volumetric estimation. Evolved from a YOLO bounding-box model into a sophisticated 2D-3D spatial fusion pipeline combining Grounding DINO, SAM, and MASt3R. Engineered a custom point-cloud denoising engine and elevation map voxelization to accurately measure irregular cargo shapes.
+        </p>
+        <div>
+          <span class="tech-tag">3D Reconstruction</span>
+          <span class="tech-tag">Spatial Fusion</span>
+          <span class="tech-tag">Computer Vision</span>
+          <span class="tech-tag">Edge AI</span>
+          <span class="tech-tag">Point Cloud Processing</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-meta">Sep 2022 — May 2023</div>
+        <h3>Sitting Director</h3>
+        <p style="margin-bottom: 1rem;">
+          A smart chair system utilizing an ESP-32, FSRs, and infrared sensors to detect and correct poor posture in real time. Implemented on-device pose estimation via TensorFlow Lite and Google MoveNet, syncing data to a custom Android app via Firebase and BLE. Designed 3D-printed mechanical components for physical posture adjustment.
+        </p>
+        <div>
+          <span class="tech-tag">IoT (ESP-32)</span>
+          <span class="tech-tag">TensorFlow Lite</span>
+          <span class="tech-tag">Android (Java)</span>
+          <span class="tech-tag">Firebase</span>
+          <span class="tech-tag">Hardware Integration</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Connect</h2>
+      <div class="contact-grid">
+        <div class="card contact-card">
+          <div class="tech-tag" style="margin:0;">Email</div>
+          <a href="mailto:andywong@gradisen.com">andywong@gradisen.com</a>
+        </div>
+        
+        <div class="card contact-card">
+          <div class="tech-tag" style="margin:0;">WhatsApp</div>
+          <a href="https://wa.me/85255727280" target="_blank">+852 55727280</a>
+        </div>
+        
+        <div class="card contact-card">
+          <div class="tech-tag" style="margin:0;">LinkedIn</div>
+          <a href="https://www.linkedin.com/in/sau-yu-wong-192387375" target="_blank">View Profile</a>
+        </div>
+        
+        <div class="card contact-card">
+          <div class="tech-tag" style="margin:0;">GitHub</div>
+          <a href="https://github.com/DoubleA0605" target="_blank">DoubleA0605</a>
+        </div>
+
+        <div class="card contact-card">
+          <div class="tech-tag" style="margin:0;">Startup</div>
+          <a href="https://gradisen.com" target="_blank">gradisen.com</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      /* © 2026 Andy Wong · Built for portfolio */
+    </div>
+  </footer>
+
+</body>
+</html>
