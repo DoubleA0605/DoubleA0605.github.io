@@ -47,4 +47,51 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
+
+    // Certification search and filter functionality
+    const certSearch = document.getElementById('certSearch');
+    if (certSearch) {
+        certSearch.addEventListener('keyup', () => {
+            filterCertifications();
+        });
+
+        // Also trigger on input for better mobile support
+        certSearch.addEventListener('input', () => {
+            filterCertifications();
+        });
+    }
+
+    function filterCertifications() {
+        const searchInput = document.getElementById('certSearch');
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        const certCards = document.querySelectorAll('.cert-card');
+        let visibleCount = 0;
+
+        certCards.forEach(card => {
+            const certData = card.getAttribute('data-cert').toLowerCase();
+            const cardTitle = card.querySelector('h3').textContent.toLowerCase();
+            const cardIssuer = card.querySelector('p').textContent.toLowerCase();
+            const cardSkills = card.querySelectorAll('.skill-tag');
+            let skillsText = '';
+            cardSkills.forEach(skill => {
+                skillsText += skill.textContent.toLowerCase() + ' ';
+            });
+
+            // Search in title, issuer, skills, and data-cert attribute
+            const searchableText = cardTitle + ' ' + cardIssuer + ' ' + skillsText + ' ' + certData;
+            
+            if (searchableText.includes(searchTerm) || searchTerm === '') {
+                card.classList.remove('hidden');
+                visibleCount++;
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+
+        // Update cert count
+        const certCount = document.getElementById('certCount');
+        if (certCount) {
+            certCount.textContent = visibleCount;
+        }
+    }
 });

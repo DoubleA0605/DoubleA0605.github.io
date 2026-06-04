@@ -146,48 +146,125 @@
     
     <section id="certifications" style="margin-top: 4rem;">
       <h2><i class="fas fa-award"></i> All Licenses & Certifications</h2>
-      <p style="color: var(--text-muted); margin-bottom: 2rem;">Listed in reverse chronological order</p>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Listed in reverse chronological order</p>
 
-      <div class="card">
+      <!-- Search Filter -->
+      <div style="margin-bottom: 2rem;">
+        <input type="text" id="certSearch" class="cert-search-input" placeholder="🔍 Search certifications by name, issuer, or skills..." 
+               style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 8px; font-size: 1rem; background-color: var(--card-bg); color: var(--text-color);">
+      </div>
+
+      <div class="cert-filter-info" style="text-align: center; margin-bottom: 1rem; color: var(--text-muted); font-size: 0.9rem;">
+        <span id="certCount">7</span> certification(s) found
+      </div>
+
+      <div class="card cert-card" data-cert="managing project risks and changes, risk management, project management, stakeholder management, mitigation strategies, irvine">
         <div class="card-meta">Issued Jun 05, 2026</div>
         <h3>Managing Project Risks and Changes</h3>
         <p>University of California, Irvine</p>
+        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;"><strong>Top Skills:</strong></p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="skill-tag">Risk Management</span>
+            <span class="skill-tag">Project Planning</span>
+            <span class="skill-tag">Stakeholder Management</span>
+            <span class="skill-tag">Mitigation Strategies</span>
+            <span class="skill-tag">Change Control</span>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="card cert-card" data-cert="budgeting scheduling projects, resource allocation, time management, cost estimation, scheduling, irvine">
         <div class="card-meta">Issued Jun 04, 2026</div>
         <h3>Budgeting and Scheduling Projects</h3>
         <p>University of California, Irvine</p>
+        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;"><strong>Top Skills:</strong></p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="skill-tag">Resource Allocation</span>
+            <span class="skill-tag">Cost Estimation</span>
+            <span class="skill-tag">Scheduling</span>
+            <span class="skill-tag">Time Management</span>
+            <span class="skill-tag">Budget Tracking</span>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="card cert-card" data-cert="initiating planning projects, project scope, requirements gathering, project charter, planning, irvine">
         <div class="card-meta">Issued Jun 04, 2026</div>
         <h3>Initiating and Planning Projects</h3>
         <p>University of California, Irvine</p>
+        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;"><strong>Top Skills:</strong></p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="skill-tag">Project Scope</span>
+            <span class="skill-tag">Requirements Gathering</span>
+            <span class="skill-tag">Project Charter</span>
+            <span class="skill-tag">Stakeholder Analysis</span>
+            <span class="skill-tag">Planning</span>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="card cert-card" data-cert="protecting business innovations strategy, intellectual property, business strategy, innovation protection, hkust">
         <div class="card-meta">Issued Jun 02, 2026</div>
         <h3>Protecting Business Innovations via Strategy</h3>
         <p>HKUST</p>
+        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;"><strong>Top Skills:</strong></p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="skill-tag">Intellectual Property</span>
+            <span class="skill-tag">International Marketing</span>
+            <span class="skill-tag">Strategic Thinking</span>
+            <span class="skill-tag">Innovation Management</span>
+            <span class="skill-tag">Competitive Analysis</span>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="card cert-card" data-cert="entrepreneurship 101 training program, business development, startup, venture, entrepreneurship, hkust">
         <div class="card-meta">Issued May 07, 2026</div>
         <h3>Entrepreneurship 101 Training Program</h3>
         <p>HKUST Entrepreneurship Center</p>
+        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;"><strong>Top Skills:</strong></p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="skill-tag">Business Development</span>
+            <span class="skill-tag">Strategic Thinking</span>
+            <span class="skill-tag">Venture Planning</span>
+            <span class="skill-tag">Market Analysis</span>
+            <span class="skill-tag">Entrepreneurship</span>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="card cert-card" data-cert="iot data hackathon 2026 team novaforge, iot, data analysis, hackathon, innovation, gsi">
         <div class="card-meta">Issued Feb 25, 2026</div>
         <h3>IOT Data Hackathon 2026 – Team NovaForge</h3>
         <p>GSI Hong Kong</p>
+        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;"><strong>Top Skills:</strong></p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="skill-tag">IoT</span>
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">Entrepreneurship</span>
+            <span class="skill-tag">Startup Strategy</span>
+            <span class="skill-tag">Innovation</span>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="card cert-card" data-cert="certificate first aid, first aid, emergency response, cpr, medical skills, st john ambulance">
         <div class="card-meta">Issued Feb 06, 2024</div>
         <h3>Certificate in First Aid</h3>
         <p>Hong Kong St. John Ambulance</p>
+        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;"><strong>Top Skills:</strong></p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="skill-tag">First Aid</span>
+            <span class="skill-tag">CPR</span>
+          </div>
+        </div>
       </div>
 
       <div style="text-align: center; margin-top: 2rem;">

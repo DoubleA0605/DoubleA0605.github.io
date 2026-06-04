@@ -450,6 +450,53 @@ section {
 
 @keyframes shimmer {
   0%, 100% { transform: translate(0, 0); opacity: 0.5; }
+  50% { transform: translate(30px, 30px); opacity: 1; }
+}
+
+/* ---------------------------------
+    CERTIFICATION SKILLS & SEARCH
+--------------------------------- */
+.skill-tag {
+  display: inline-block;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: rgba(56, 189, 248, 0.25);
+  border-color: rgba(56, 189, 248, 0.6);
+}
+
+.cert-search-input {
+  transition: all 0.3s ease;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.cert-search-input:focus {
+  outline: none;
+  border-color: var(--accent-primary) !important;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.1);
+  background-color: rgba(30, 41, 59, 0.95) !important;
+}
+
+.cert-card {
+  transition: all 0.3s ease;
+}
+
+.cert-card.hidden {
+  display: none;
+}
+
+.cert-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.4);
+}
   50% { transform: translate(20px, 20px); opacity: 1; }
 }
 
