@@ -430,6 +430,23 @@ section {
 .accent { color: #4ade80; }
 .aka { font-size: 1rem; color: var(--text-muted); margin-top: -0.25rem; font-style: italic; }
 .hero-grid { display: grid; grid-template-columns: 1fr 320px; gap: 1.5rem; align-items: start; }
+.hero-aside {
+  display: flex;
+  justify-content: center;
+}
+.hero-avatar {
+  border-radius: 16px;
+  overflow: hidden;
+  line-height: 0;
+}
+.hero-avatar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
 .hero-aside .highlight {
   background: linear-gradient(180deg, rgba(59,130,246,0.12), rgba(56,189,248,0.05));
   border: 1px solid rgba(56,189,248,0.15);
@@ -595,5 +612,6 @@ footer {
   .nav-links { display: flex; flex-direction: column; gap: 0.6rem; }
   .lang-switcher { padding-left: 0; border-left: none; }
   .hero-grid { grid-template-columns: 1fr; }
+  .hero-aside { order: -1; position: static; max-width: 240px; margin: 0 auto 1rem; }
   .projects-grid { grid-template-columns: 1fr; }
 }
