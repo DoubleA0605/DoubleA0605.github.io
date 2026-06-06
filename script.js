@@ -43,7 +43,11 @@ const translations = {
     allCertificationsTitle: 'All Licenses & Certifications',
     certListedNote: 'Listed in reverse chronological order',
     certSearchPlaceholder: '🔍 Search certifications by name, issuer, or skills...',
-    certFound: 'certification(s) found'
+    certFound: 'certification(s) found',
+    certCountLabel: 'certification(s) found',
+    
+    // Highlights section (GEO)
+    highlightsTitle: 'Highlights'
   },
   'zh-TW': {
     aboutTitle: '關於',
@@ -83,7 +87,11 @@ const translations = {
     allCertificationsTitle: '所有許可證和認證',
     certListedNote: '按時間倒序列出',
     certSearchPlaceholder: '🔍 按名稱、頒發者或技能搜索認證...',
-    certFound: '項認證'
+    certFound: '項認證',
+    certCountLabel: '項認證',
+    
+    // Highlights section (GEO)
+    highlightsTitle: '重點摘要'
   },
   'zh-CN': {
     aboutTitle: '关于',
@@ -123,7 +131,11 @@ const translations = {
     allCertificationsTitle: '所有许可证和认证',
     certListedNote: '按时间倒序列出',
     certSearchPlaceholder: '🔍 按名称、颁发者或技能搜索认证...',
-    certFound: '项认证'
+    certFound: '项认证',
+    certCountLabel: '项认证',
+    
+    // Highlights section (GEO)
+    highlightsTitle: '重点摘要'
   }
 };
 
@@ -180,13 +192,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Certification search and filter functionality
     const certSearch = document.getElementById('certSearch');
     if (certSearch) {
-        certSearch.addEventListener('keyup', () => {
-            filterCertifications();
-        });
-
-        // Also trigger on input for better mobile support
-        certSearch.addEventListener('input', () => {
-            filterCertifications();
+        // Debounced search for better performance
+        let debounceTimer;
+        const debouncedFilter = () => {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(filterCertifications, 150);
+        };
+        
+        certSearch.addEventListener('keyup', debouncedFilter);
+        certSearch.addEventListener('input', debouncedFilter);
+        // Allow clearing with Escape key
+        certSearch.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                certSearch.value = '';
+                filterCertifications();
+            }
         });
 
         // Initialize count on page load
@@ -195,14 +215,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function filterCertifications() {
         const searchInput = document.getElementById('certSearch');
+        if (!searchInput) return;
+        
         const searchTerm = searchInput.value.toLowerCase().trim();
         const certCards = document.querySelectorAll('.cert-card');
         let visibleCount = 0;
 
         certCards.forEach(card => {
-            const certData = card.getAttribute('data-cert').toLowerCase();
-            const cardTitle = card.querySelector('h3').textContent.toLowerCase();
-            const cardIssuer = card.querySelector('p').textContent.toLowerCase();
+            const certData = card.getAttribute('data-cert');
+            if (!certData) {
+                card.classList.remove('hidden');
+                visibleCount++;
+                return;
+            }
+            
+            const cardTitleEl = card.querySelector('h3');
+            const cardIssuerEl = card.querySelector('p');
+            const cardTitle = cardTitleEl ? cardTitleEl.textContent.toLowerCase() : '';
+            const cardIssuer = cardIssuerEl ? cardIssuerEl.textContent.toLowerCase() : '';
             const cardSkills = card.querySelectorAll('.skill-tag');
             let skillsText = '';
             cardSkills.forEach(skill => {
@@ -210,9 +240,9 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             // Search in title, issuer, skills, and data-cert attribute
-            const searchableText = cardTitle + ' ' + cardIssuer + ' ' + skillsText + ' ' + certData;
+            const searchableText = cardTitle + ' ' + cardIssuer + ' ' + skillsText + ' ' + certData.toLowerCase();
             
-            if (searchableText.includes(searchTerm) || searchTerm === '') {
+            if (searchTerm === '' || searchableText.includes(searchTerm)) {
                 card.classList.remove('hidden');
                 visibleCount++;
             } else {
@@ -220,10 +250,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Update cert count
+        // Update cert count with aria-live for accessibility
         const certCount = document.getElementById('certCount');
         if (certCount) {
             certCount.textContent = visibleCount;
+            // Update aria-live region for screen readers
+            const certFilterInfo = document.querySelector('.cert-filter-info');
+            if (certFilterInfo && searchTerm !== '') {
+                certFilterInfo.setAttribute('aria-live', 'polite');
+            }
         }
     }
     
@@ -287,7 +322,10 @@ function setLanguage(lang) {
     updateText('[data-i18n="allCertificationsTitle"]', trans.allCertificationsTitle);
     updateText('[data-i18n="certListedNote"]', trans.certListedNote);
     updateAttribute('[data-i18n="certSearchPlaceholder"]', 'placeholder', trans.certSearchPlaceholder);
-    updateText('[data-i18n="certCountLabel"]', trans.certFound);
+    updateText('[data-i18n="certCountLabel"]', trans.certCountLabel);
+    
+    // Highlights (GEO)
+    updateText('[data-i18n="highlightsTitle"]', trans.highlightsTitle);
 }
 
 function updateText(selector, text) {

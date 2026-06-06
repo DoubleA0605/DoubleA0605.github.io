@@ -1,22 +1,56 @@
 # robots.txt - Allow all search engines and AI crawlers
+Sitemap: https://doubleA0605.github.io/sitemap.xml
 
 # Allow all bots
 User-agent: *
 Allow: /
 Disallow: /private/
 
-# Specific directives
+# Specific search engine crawlers
 User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
+# AI / LLM crawlers (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
 User-agent: Claude-Web
 Allow: /
 
-User-agent: GPTBot
+User-agent: ClaudeBot
 Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Cohere and other AI crawlers
+User-agent: cohere-ai
+Allow: /
+
+# Crawl-delay to avoid overwhelming the server (GitHub Pages is generous but good practice)
+User-agent: *
+Crawl-delay: 2
 
 User-agent: CCBot
 Allow: /

@@ -19,6 +19,18 @@
   <script src="script.js" defer></script>
 
   <!-- JSON-LD Structured Data -->
+  <!-- WebSite Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Andy Wong | Certifications",
+    "url": "https://doubleA0605.github.io/certifications.html",
+    "description": "Complete list of professional certifications and licenses earned by Andy Wong (Wong Sau Yu, 黃修譽) - Software Engineer & Entrepreneur",
+    "inLanguage": ["en", "zh-Hant", "zh-Hans"]
+  }
+  </script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -35,6 +47,100 @@
         "position": 2,
         "name": "Certifications",
         "item": "https://doubleA0605.github.io/certifications.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAQPage Schema for GEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What certifications does Andy Wong hold?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Andy Wong holds certifications in Project Management (UC Irvine), Business Innovation Strategy (HKUST), Entrepreneurship (HKUST Entrepreneurship Center), IoT Data Hackathon (GSI Hong Kong - Team NovaForge), and First Aid (Hong Kong St. John Ambulance). He also completed the Entrepreneurship 101 Training Program."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Andy Wong's most recent certification?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Andy Wong's most recent certification is the Project Management Principles and Practices Specialization from the University of California, Irvine, issued in June 2026, covering budget management, work breakdown structures (WBS), and stakeholder engagement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Andy Wong have any first aid certification?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Andy Wong holds a Certificate in First Aid issued by the Hong Kong St. John Ambulance, earned in February 2024. He also serves as a Cadet Leader at St. John Ambulance."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ItemList Schema for certifications -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Project Management Principles and Practices Specialization",
+          "issuedBy": {"@type": "Organization", "name": "University of California, Irvine"},
+          "dateIssued": "2026-06-05"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Protecting Business Innovations via Strategy",
+          "issuedBy": {"@type": "Organization", "name": "HKUST"},
+          "dateIssued": "2026-06-02"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Entrepreneurship 101 Training Program",
+          "issuedBy": {"@type": "Organization", "name": "HKUST Entrepreneurship Center"},
+          "dateIssued": "2026-05-07"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "CompetitionCredential",
+          "name": "IOT Data Hackathon 2026 – Team NovaForge",
+          "issuedBy": {"@type": "Organization", "name": "GSI Hong Kong"},
+          "dateIssued": "2026-02-25"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Certificate in First Aid",
+          "issuedBy": {"@type": "Organization", "name": "Hong Kong St. John Ambulance"},
+          "dateIssued": "2024-02-06"
+        }
       }
     ]
   }
@@ -149,10 +255,10 @@
         <span id="certCount">5</span> <span data-i18n='certCountLabel'>certification(s) found</span>
       </div>
 
-      <div class="card cert-card" data-cert="project management principles and practices, project management specialization, budget management, work breakdown structure (wbs), irvine">
-        <div class="card-meta">Issued Jun 05, 2026</div>
-        <h3>Project Management Principles and Practices Specialization</h3>
-        <p>University of California, Irvine</p>
+      <div class="card cert-card" data-cert="project management principles and practices, project management specialization, budget management, work breakdown structure (wbs), irvine" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+        <div class="card-meta"><time datetime="2026-06-05" itemprop="dateIssued">Issued Jun 05, 2026</time></div>
+        <h3 itemprop="name">Project Management Principles and Practices Specialization</h3>
+        <p itemprop="issuedBy" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">University of California, Irvine</span></p>
         <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
           <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;"><strong>Top Skills:</strong></p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
@@ -165,10 +271,10 @@
         </div>
       </div>
 
-      <div class="card cert-card" data-cert="protecting business innovations strategy, intellectual property, business strategy, innovation protection, hkust">
-        <div class="card-meta">Issued Jun 02, 2026</div>
-        <h3>Protecting Business Innovations via Strategy</h3>
-        <p>HKUST</p>
+      <div class="card cert-card" data-cert="protecting business innovations strategy, intellectual property, business strategy, innovation protection, hkust" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+        <div class="card-meta"><time datetime="2026-06-02" itemprop="dateIssued">Issued Jun 02, 2026</time></div>
+        <h3 itemprop="name">Protecting Business Innovations via Strategy</h3>
+        <p itemprop="issuedBy" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">HKUST</span></p>
         <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
           <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;"><strong>Top Skills:</strong></p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
@@ -181,10 +287,10 @@
         </div>
       </div>
 
-      <div class="card cert-card" data-cert="entrepreneurship 101 training program, business development, startup, venture, entrepreneurship, hkust">
-        <div class="card-meta">Issued May 07, 2026</div>
-        <h3>Entrepreneurship 101 Training Program</h3>
-        <p>HKUST Entrepreneurship Center</p>
+      <div class="card cert-card" data-cert="entrepreneurship 101 training program, business development, startup, venture, entrepreneurship, hkust" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+        <div class="card-meta"><time datetime="2026-05-07" itemprop="dateIssued">Issued May 07, 2026</time></div>
+        <h3 itemprop="name">Entrepreneurship 101 Training Program</h3>
+        <p itemprop="issuedBy" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">HKUST Entrepreneurship Center</span></p>
         <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
           <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;"><strong>Top Skills:</strong></p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
@@ -197,10 +303,10 @@
         </div>
       </div>
 
-      <div class="card cert-card" data-cert="iot data hackathon 2026 team novaforge, iot, data analysis, hackathon, innovation, gsi">
-        <div class="card-meta">Issued Feb 25, 2026</div>
-        <h3>IOT Data Hackathon 2026 – Team NovaForge</h3>
-        <p>GSI Hong Kong</p>
+      <div class="card cert-card" data-cert="iot data hackathon 2026 team novaforge, iot, data analysis, hackathon, innovation, gsi" itemscope itemtype="https://schema.org/CompetitionCredential">
+        <div class="card-meta"><time datetime="2026-02-25" itemprop="dateIssued">Issued Feb 25, 2026</time></div>
+        <h3 itemprop="name">IOT Data Hackathon 2026 – Team NovaForge</h3>
+        <p itemprop="issuedBy" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">GSI Hong Kong</span></p>
         <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
           <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;"><strong>Top Skills:</strong></p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
@@ -213,10 +319,10 @@
         </div>
       </div>
 
-      <div class="card cert-card" data-cert="certificate first aid, first aid, emergency response, cpr, medical skills, st john ambulance">
-        <div class="card-meta">Issued Feb 06, 2024</div>
-        <h3>Certificate in First Aid</h3>
-        <p>Hong Kong St. John Ambulance</p>
+      <div class="card cert-card" data-cert="certificate first aid, first aid, emergency response, cpr, medical skills, st john ambulance" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+        <div class="card-meta"><time datetime="2024-02-06" itemprop="dateIssued">Issued Feb 06, 2024</time></div>
+        <h3 itemprop="name">Certificate in First Aid</h3>
+        <p itemprop="issuedBy" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Hong Kong St. John Ambulance</span></p>
         <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
           <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;"><strong>Top Skills:</strong></p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
@@ -227,15 +333,20 @@
       </div>
 
       <div style="text-align: center; margin-top: 2rem;">
-        <a href='index.html#certifications' class='btn btn-ghost'><i class='fas fa-arrow-left'></i> <span data-i18n='backToHome'>Back to Home</span></a>
+        <a href='index.html#certifications' class='btn btn-ghost' rel='prev'><i class='fas fa-arrow-left'></i> <span data-i18n='backToHome'>Back to Home</span></a>
       </div>
     </section>
 
+    <!-- GEO: Cross-linking back to main portfolio for entity connectivity -->
+    <nav aria-label="Breadcrumb" style="margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">
+      <a href="index.html" style="color: var(--accent-primary);">Home</a> &rsaquo; <span>Certifications</span>
+    </nav>
+
   </main>
 
-  <footer>
+  <footer itemscope itemtype="https://schema.org/WPFooter">
     <div class="container">
-      <small>© 2026 Andy Wong · Built for portfolio</small>
+      <small>© <time datetime="2026">2026</time> <span itemprop="copyrightHolder">Andy Wong</span> · Built for portfolio</small>
     </div>
   </footer>
 

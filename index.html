@@ -165,6 +165,124 @@
     }
   }
   </script>
+
+  <!-- WebSite Schema with Sitelinks Searchbox -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Andy Wong | Software Engineer & Entrepreneur",
+    "alternateName": ["Andy Wong Portfolio", "DoubleA0605", "AA Portfolio"],
+    "url": "https://doubleA0605.github.io/",
+    "description": "Portfolio of Andy Wong (黃修譽, AA, DoubleA0605) - Software Engineer, Entrepreneur, and CEO of Gradisen. Specializing in robotics, edge AI, computer vision, and IoT.",
+    "inLanguage": ["en", "zh-Hant", "zh-Hans"],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://doubleA0605.github.io/?s={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- FAQPage Schema for GEO - helps AI-powered search engines understand Q&A content -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who is Andy Wong?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Andy Wong (also known as Wong Sau Yu, 黃修譽, Double A, AA, or DoubleA0605) is a Software Engineer and Entrepreneur based in Hong Kong. He is the CEO and Co-founder of Gradisen, a company specializing in robotics and edge AI solutions for warehouse automation. He is currently pursuing a BEng in Computer Engineering at HKUST."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Gradisen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gradisen is an innovative robotics and edge AI company founded by Andy Wong that develops autonomous solutions for warehouse automation. Its flagship product, GDSense, is an autonomous patrol robot that detects packaging damage and verifies SKUs using computer vision and sensor fusion technology."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What technologies does Andy Wong specialize in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Andy Wong specializes in robotics (ROS), edge AI (NVIDIA Jetson), computer vision (YOLO, Grounding DINO, SAM), 3D reconstruction (MASt3R), point cloud processing, IoT (ESP-32), and full-stack development with Python. He also has expertise in autonomous navigation, sensor fusion (LiDAR/RGB-D), and warehouse automation systems."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is GDSense?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GDSense is an autonomous patrol robot built by Andy Wong and Gradisen for small-to-medium warehouses. It uses an NVIDIA Jetson edge-AI pipeline with ROS, integrating a YOLO-based vision model, RGB-D camera, and 2D LiDAR to navigate fixed routes and detect packaging damage and verify SKUs with over 80% accuracy — all without requiring warehouse infrastructure modifications."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What projects has Andy Wong created?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Andy Wong has created several notable projects: GDSense (autonomous warehouse patrol robot), NovaSense (3D inventory counting system using edge AI and point cloud processing), and Sitting Director (smart posture-correcting chair with TensorFlow Lite and IoT). He also led Team NovaForge in the IOT Data Hackathon 2026."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ProfilePage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Andy Wong",
+      "alternateName": ["Wong Sau Yu", "Double A", "AA", "DoubleA0605", "黃修譽"],
+      "url": "https://doubleA0605.github.io/",
+      "image": "https://doubleA0605.github.io/images/personal_image.png",
+      "jobTitle": ["Software Engineer", "Entrepreneur", "CEO"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Gradisen",
+        "url": "https://gradisen.com"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "The Hong Kong University of Science and Technology",
+          "alternateName": "HKUST"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "HKU SPACE"
+        }
+      ],
+      "knowsAbout": [
+        "Robotics",
+        "Edge AI",
+        "Computer Vision",
+        "IoT",
+        "Python",
+        "ROS",
+        "NVIDIA Jetson",
+        "YOLO",
+        "3D Reconstruction",
+        "Point Cloud Processing",
+        "Autonomous Navigation",
+        "Sensor Fusion",
+        "Warehouse Automation"
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -191,15 +309,15 @@
     </div>
   </nav>
 
-  <main class="container">
+  <main class="container" itemscope itemtype="https://schema.org/ProfilePage">
     
-    <section id="about" class="hero" style="margin-top: 4rem;">
+    <section id="about" class="hero" style="margin-top: 4rem;" itemscope itemtype="https://schema.org/Person">
       <div class="hero-grid">
         <div class="hero-content">
-          <h1 data-i18n="heroTitle">Andy Wong</h1>
+          <h1 data-i18n="heroTitle" itemprop="name">Andy Wong</h1>
           <p class="aka" data-i18n="heroAka">aka Double A</p>
-          <p class="lead" data-i18n="heroSubtitle">Software Engineer & Entrepreneur | CPEG @HKUST </p>
-          <p class="lead" data-i18n="heroSubtitle2">CEO @Gradisen</p>
+          <p class="lead" data-i18n="heroSubtitle"><span itemprop="jobTitle">Software Engineer</span> & <span itemprop="jobTitle">Entrepreneur</span> | CPEG @HKUST </p>
+          <p class="lead" data-i18n="heroSubtitle2">CEO @<span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization"><a href="https://gradisen.com" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Gradisen</span></a></span></p>
 
           <div class="hero-cta" style="margin-top:1rem;">
             <a class="btn" href="#projects"><i class="fas fa-rocket"></i> <span data-i18n="viewProjects">View Projects</span></a>
@@ -208,14 +326,14 @@
 
           <div class="card" style="margin-top:1.5rem;">
             <h3 data-i18n="aboutMeTitle">About Me</h3>
-            <p style="margin-top: 0.5rem;" data-i18n="aboutMeText">
+            <p style="margin-top: 0.5rem;" data-i18n="aboutMeText" itemprop="description">
               I am a motivated Computer Engineering student at HKUST. Associate degree from HKU SPACE with Principal's Honours List. Strong technical skills in Python, cloud computing, IoT, and edge AI. Co-founder & CEO of Gradisen, actively building real-world products. Cadet Leader at St. John Ambulance.
             </p>
           </div>
         </div>
         <div class="hero-aside">
           <div class="hero-avatar highlight">
-            <img src="images/personal_image.png" alt="Andy Wong (黃修譽) - Software Engineer & Entrepreneur" width="320" height="320" loading="eager">
+            <img src="images/personal_image.png" alt="Andy Wong (黃修譽) - Software Engineer & Entrepreneur" width="320" height="320" loading="eager" decoding="async" itemprop="image">
           </div>
         </div>
       </div>
@@ -224,17 +342,17 @@
     <section id="education">
       <h2><i class="fas fa-book-open"></i> <span data-i18n="educationTitle">Education</span></h2>
       
-      <div class="card">
-        <div class="card-meta">2025 — 2028</div>
-        <h3>The Hong Kong University of Science and Technology</h3>
-        <p style="color: var(--text-main); margin-bottom: 0.5rem;" data-i18n="hkustDegree">Bachelor of Engineering – Computer Engineering</p>
+      <div class="card" itemscope itemtype="https://schema.org/EducationalOccupationalProgram">
+        <div class="card-meta"><time datetime="2025">2025</time> — <time datetime="2028">2028</time></div>
+        <h3 itemprop="provider" itemscope itemtype="https://schema.org/CollegeOrUniversity"><span itemprop="name">The Hong Kong University of Science and Technology</span></h3>
+        <p style="color: var(--text-main); margin-bottom: 0.5rem;" data-i18n="hkustDegree" itemprop="name">Bachelor of Engineering – Computer Engineering</p>
         <p data-i18n="hkustText">Pursuing BEng in Computer Engineering.</p>
       </div>
 
-      <div class="card">
-        <div class="card-meta">2023 — 2025</div>
-        <h3>HKU SPACE</h3>
-        <p style="color: var(--text-main); margin-bottom: 0.5rem;" data-i18n="hkuspaceDegree">Associate's Degree – Engineering (Computer Science)</p>
+      <div class="card" itemscope itemtype="https://schema.org/EducationalOccupationalProgram">
+        <div class="card-meta"><time datetime="2023">2023</time> — <time datetime="2025">2025</time></div>
+        <h3 itemprop="provider" itemscope itemtype="https://schema.org/CollegeOrUniversity"><span itemprop="name">HKU SPACE</span></h3>
+        <p style="color: var(--text-main); margin-bottom: 0.5rem;" data-i18n="hkuspaceDegree" itemprop="name">Associate's Degree – Engineering (Computer Science)</p>
         <p data-i18n="hkuspaceText"><strong>Graduate with Merit, CGPA 3.61, Principal's Honours List 2024-2025</strong> </p>
       </div>
     </section>
@@ -280,18 +398,18 @@
     <section id="projects">
       <h2><i class="fas fa-cube"></i> <span data-i18n="projectsTitle">Projects</span></h2>
 
-      <div class="card project-card">
+      <div class="card project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
         <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white; min-height: 180px; border-radius: 8px; margin-bottom: 1rem;">
           <i class="fas fa-robot"></i>
         </div>
-        <div class="card-meta">Apr 2026 — Present</div>
+        <div class="card-meta"><time datetime="2026-04">Apr 2026</time> — Present</div>
         <h3 style="display: flex; align-items: center; flex-wrap: wrap; gap: 12px;">
-          <i class="fas fa-check-circle" style="color: var(--accent-primary); font-size: 1.1rem;"></i> GDSense
-          <a href="https://gradisen.com" target="_blank" class="btn-gradisen" title="Visit Gradisen">
-            <img src="images/gradisen-logo.png" alt="Gradisen" class="gradisen-logo">
+          <i class="fas fa-check-circle" style="color: var(--accent-primary); font-size: 1.1rem;"></i> <span itemprop="name">GDSense</span>
+          <a href="https://gradisen.com" target="_blank" rel="noopener noreferrer" class="btn-gradisen" title="Visit Gradisen">
+            <img src="images/gradisen-logo.png" alt="Gradisen" class="gradisen-logo" loading="lazy" decoding="async">
           </a>
         </h3>
-        <p style="margin-bottom: 1rem; margin-top: 0.5rem;" data-i18n="gdSenseDesc">
+        <p style="margin-bottom: 1rem; margin-top: 0.5rem;" data-i18n="gdSenseDesc" itemprop="description">
           An autonomous patrol robot designed for small-to-medium warehouses to detect packaging damage and verify SKUs without infrastructure modifications. Built on an NVIDIA Jetson edge-AI pipeline with ROS, it integrates a YOLO-based vision model, RGB-D camera, and 2D LiDAR to navigate fixed routes and identify structural anomalies externally with over 80% accuracy.
         </p>
         <div>
@@ -303,13 +421,13 @@
         </div>
       </div>
 
-      <div class="card project-card">
+      <div class="card project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
         <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white; min-height: 180px; border-radius: 8px; margin-bottom: 1rem;">
           <i class="fas fa-cube"></i>
         </div>
-        <div class="card-meta">Dec 2025 — Apr 2026</div>
-        <h3><i class="fas fa-check-circle" style="color: var(--accent-primary); font-size: 1.1rem;"></i> NovaSense</h3>
-        <p style="margin-bottom: 1rem;" data-i18n="novaSenseDesc">
+        <div class="card-meta"><time datetime="2025-12">Dec 2025</time> — <time datetime="2026-04">Apr 2026</time></div>
+        <h3><i class="fas fa-check-circle" style="color: var(--accent-primary); font-size: 1.1rem;"></i> <span itemprop="name">NovaSense</span></h3>
+        <p style="margin-bottom: 1rem;" data-i18n="novaSenseDesc" itemprop="description">
           An advanced Edge AI system for warehouse inventory counting and volumetric estimation. Evolved from a YOLO bounding-box model into a sophisticated 2D-3D spatial fusion pipeline combining Grounding DINO, SAM, and MASt3R. Engineered a custom point-cloud denoising engine and elevation map voxelization to accurately measure irregular cargo shapes.
         </p>
         <div>
@@ -321,13 +439,13 @@
         </div>
       </div>
 
-      <div class="card project-card">
+      <div class="card project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
         <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white; min-height: 180px; border-radius: 8px; margin-bottom: 1rem;">
           <i class="fas fa-chair"></i>
         </div>
-        <div class="card-meta">Sep 2022 — May 2023</div>
-        <h3><i class="fas fa-check-circle" style="color: var(--accent-primary); font-size: 1.1rem;"></i> Sitting Director</h3>
-        <p style="margin-bottom: 1rem;" data-i18n="sittingDirectorDesc">
+        <div class="card-meta"><time datetime="2022-09">Sep 2022</time> — <time datetime="2023-05">May 2023</time></div>
+        <h3><i class="fas fa-check-circle" style="color: var(--accent-primary); font-size: 1.1rem;"></i> <span itemprop="name">Sitting Director</span></h3>
+        <p style="margin-bottom: 1rem;" data-i18n="sittingDirectorDesc" itemprop="description">
           A smart chair system utilizing an ESP-32, FSRs, and infrared sensors to detect and correct poor posture in real time. Implemented on-device pose estimation via TensorFlow Lite and Google MoveNet, syncing data to a custom Android app via Firebase and BLE. Designed 3D-printed mechanical components for physical posture adjustment.
         </p>
         <div>
@@ -342,34 +460,40 @@
 
     <section id="contact">
       <h2><i class="fas fa-handshake"></i> <span data-i18n="contactTitle">Connect</span></h2>
-      <div class="contact-icons">
-        <a href="mailto:andywong@gradisen.com" class="icon-link" title="Email">
+      <div class="contact-icons" itemscope itemtype="https://schema.org/ContactPoint">
+        <meta itemprop="contactType" content="Professional contact">
+        <a href="mailto:andywong@gradisen.com" class="icon-link" title="Email" itemprop="email">
           <i class="fas fa-envelope"></i>
+          <span class="sr-only">Email Andy Wong</span>
         </a>
         
-        <a href="https://wa.me/85255727280" target="_blank" class="icon-link" title="WhatsApp">
+        <a href="https://wa.me/85255727280" target="_blank" rel="noopener noreferrer" class="icon-link" title="WhatsApp">
           <i class="fab fa-whatsapp"></i>
+          <span class="sr-only">WhatsApp Andy Wong</span>
         </a>
         
-        <a href="https://www.linkedin.com/in/sau-yu-wong-192387375" target="_blank" class="icon-link" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/sau-yu-wong-192387375" target="_blank" rel="noopener noreferrer" class="icon-link" title="LinkedIn" itemprop="sameAs">
           <i class="fab fa-linkedin"></i>
+          <span class="sr-only">LinkedIn Profile</span>
         </a>
         
-        <a href="https://github.com/DoubleA0605" target="_blank" class="icon-link" title="GitHub">
+        <a href="https://github.com/DoubleA0605" target="_blank" rel="noopener noreferrer" class="icon-link" title="GitHub" itemprop="sameAs">
           <i class="fab fa-github"></i>
+          <span class="sr-only">GitHub Profile</span>
         </a>
 
-        <a href="https://gradisen.com" target="_blank" class="icon-link" title="Gradisen">
-          <img src="images/gradisen-logo.png" alt="Gradisen" class="gradisen-logo-icon">
+        <a href="https://gradisen.com" target="_blank" rel="noopener noreferrer" class="icon-link" title="Gradisen">
+          <img src="images/gradisen-logo.png" alt="Gradisen" class="gradisen-logo-icon" loading="lazy" decoding="async">
+          <span class="sr-only">Gradisen Website</span>
         </a>
       </div>
     </section>
 
   </main>
 
-  <footer>
+  <footer itemscope itemtype="https://schema.org/WPFooter">
     <div class="container">
-      <small>© 2026 Andy Wong · Built for portfolio</small>
+      <small>© <time datetime="2026">2026</time> <span itemprop="copyrightHolder">Andy Wong</span> · <span itemprop="description">Personal portfolio showcasing robotics, edge AI, and software engineering projects</span></small>
     </div>
   </footer>
 
