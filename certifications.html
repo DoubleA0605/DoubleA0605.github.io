@@ -120,6 +120,11 @@
           <li><a href="index.html#projects"><i class="fas fa-code"></i> Projects</a></li>
           <li><a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
+        <div class="lang-switcher">
+          <button class="lang-btn lang-active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="zh-TW">繁</button>
+          <button class="lang-btn" data-lang="zh-CN">简</button>
+        </div>
       </div>
     </div>
   </nav>
@@ -127,17 +132,17 @@
   <main class="container">
     
     <section id="certifications" style="margin-top: 4rem;">
-      <h2><i class="fas fa-award"></i> All Licenses & Certifications</h2>
-      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Listed in reverse chronological order</p>
+      <h2><i class="fas fa-award"></i> <span data-i18n='allCertificationsTitle'>All Licenses & Certifications</span></h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;" data-i18n='certListedNote'>Listed in reverse chronological order</p>
 
       <!-- Search Filter -->
       <div style="margin-bottom: 2rem;">
-        <input type="text" id="certSearch" class="cert-search-input" placeholder="🔍 Search certifications by name, issuer, or skills..." 
+        <input type="text" id="certSearch" class="cert-search-input" data-i18n="certSearchPlaceholder" placeholder="🔍 Search certifications by name, issuer, or skills..." 
                style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 8px; font-size: 1rem; background-color: var(--card-bg); color: var(--text-color);">
       </div>
 
       <div class="cert-filter-info" style="text-align: center; margin-bottom: 1rem; color: var(--text-muted); font-size: 0.9rem;">
-        <span id="certCount">7</span> certification(s) found
+        <span id="certCount">5</span> <span data-i18n='certCountLabel'>certification(s) found</span>
       </div>
 
       <div class="card cert-card" data-cert="project management principles and practices, project management specialization, budget management, work breakdown structure (wbs), irvine">
@@ -218,7 +223,7 @@
       </div>
 
       <div style="text-align: center; margin-top: 2rem;">
-        <a href="index.html#certifications" class="btn btn-ghost"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <a href='index.html#certifications' class='btn btn-ghost'><i class='fas fa-arrow-left'></i> <span data-i18n='backToHome'>Back to Home</span></a>
       </div>
     </section>
 
