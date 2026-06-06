@@ -54,7 +54,7 @@ const translations = {
     
     // Hero section
     heroTitle: '黃修譽',
-    heroAka: '又名 Double A',
+    heroAka: 'aka Double A',
     heroSubtitle: '軟體工程師 & 創業家 | CPEG @HKUST',
     heroSubtitle2: 'CEO @Gradisen',
     viewProjects: '查看項目',
@@ -62,7 +62,7 @@ const translations = {
     
     // About
     aboutMeTitle: '關於我',
-    aboutMeText: '我是香港科技大學計算機工程系的學生。畢業於HKU SPACE，獲得副學士學位，成績優異。精通Python、雲計算、物聯網和邊緣人工智能。Gradisen的聯合創始人兼首席執行官，積極開發實際產品。聖約翰救傷隊隊員領導。',
+    aboutMeText: '我是香港科技大學計算機工程系的學生。畢業於HKU SPACE，獲得副學士學位，成績優異。精通Python、雲計算、物聯網和邊緣人工智能。Gradisen的聯合創始人兼首席執行官，積極開發實際產品。香港聖約翰救傷隊少青團的見習隊領袖。',
     
     // Education
     hkustDegree: '工程學學士 - 計算機工程',
@@ -94,7 +94,7 @@ const translations = {
     
     // Hero section
     heroTitle: '黄修誉',
-    heroAka: '又名 Double A',
+    heroAka: 'aka Double A',
     heroSubtitle: '软件工程师 & 创业家 | CPEG @HKUST',
     heroSubtitle2: 'CEO @Gradisen',
     viewProjects: '查看项目',
@@ -102,7 +102,7 @@ const translations = {
     
     // About
     aboutMeTitle: '关于我',
-    aboutMeText: '我是香港科技大学计算机工程系的学生。毕业于HKU SPACE，获得副学士学位，成绩优异。精通Python、云计算、物联网和边缘人工智能。Gradisen的联合创始人兼首席执行官，积极开发实际产品。圣约翰救伤队队员领导。',
+    aboutMeText: '我是香港科技大学计算机工程系的学生。毕业于HKU SPACE，获得副学士学位，成绩优异。精通Python、云计算、物联网和边缘人工智能。Gradisen的联合创始人兼首席执行官，积极开发实际产品。香港圣约翰救伤队少青团的见习队领袖。',
     
     // Education
     hkustDegree: '工程学学士 - 计算机工程',
