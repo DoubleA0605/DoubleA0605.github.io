@@ -29,6 +29,9 @@ const translations = {
     hkustText: 'Pursuing BEng in Computer Engineering.',
     hkuspaceDegree: 'Associate\'s Degree – Engineering (Computer Science)',
     hkuspaceText: 'Graduate with Merit, CGPA 3.61, Principal\'s Honours List 2024-2025',
+    skhbbssName: '聖公會白約翰會督中學',
+    skhbbssText: 'HKDSE graduate. Active in STEM projects including the MiTeen Academy air hockey table and ICanCode robot competition.',
+    seeSchoolMemories: 'See School Memories',
     
     // Projects
     gdSenseDesc: 'An autonomous patrol robot designed for small-to-medium warehouses to detect packaging damage and verify SKUs without infrastructure modifications. Built on an NVIDIA Jetson edge-AI pipeline with ROS, it integrates a YOLO-based vision model, RGB-D camera, and 2D LiDAR to navigate fixed routes and identify structural anomalies externally with over 80% accuracy.',
@@ -73,6 +76,9 @@ const translations = {
     hkustText: '正在攻讀計算機工程學位。',
     hkuspaceDegree: '副學位 - 工程（計算機科學）',
     hkuspaceText: '以優異成績畢業，績點3.61，2024-2025年校長榮譽名單',
+    skhbbssName: '聖公會白約翰會督中學',
+    skhbbssText: '香港中學文憑試畢業生。積極參與STEM項目，包括MiTeen Academy氣墊彈珠台和ICanCode機械人競賽。',
+    seeSchoolMemories: '查看校園回憶',
     
     // Projects
     gdSenseDesc: '為中小型倉庫設計的自主巡邏機器人，用於檢測包裝損傷和驗證SKU，無需基礎設施改造。基於NVIDIA Jetson邊緣AI管道和ROS構建，集成了基於YOLO的視覺模型、RGB-D攝像頭和2D激光雷達，以超過80%的準確度沿著固定路線導航並識別外部結構異常。',
@@ -117,6 +123,9 @@ const translations = {
     hkustText: '正在攻读计算机工程学位。',
     hkuspaceDegree: '副学位 - 工程（计算机科学）',
     hkuspaceText: '以优异成绩毕业，绩点3.61，2024-2025年校长荣誉名单',
+    skhbbssName: '圣公会白约翰会督中学',
+    skhbbssText: '香港中学文凭试毕业生。积极参与STEM项目，包括MiTeen Academy气垫弹珠台和ICanCode机器人竞赛。',
+    seeSchoolMemories: '查看校园回忆',
     
     // Projects
     gdSenseDesc: '为中小型仓库设计的自主巡逻机器人，用于检测包装损伤和验证SKU，无需基础设施改造。基于NVIDIA Jetson边缘AI管道和ROS构建，集成了基于YOLO的视觉模型、RGB-D摄像头和2D激光雷达，以超过80%的准确度沿着固定路线导航并识别外部结构异常。',
@@ -308,6 +317,9 @@ function setLanguage(lang) {
     updateText('[data-i18n="hkustText"]', trans.hkustText);
     updateText('[data-i18n="hkuspaceDegree"]', trans.hkuspaceDegree);
     updateText('[data-i18n="hkuspaceText"]', trans.hkuspaceText);
+    updateText('[data-i18n="skhbbssName"]', trans.skhbbssName);
+    updateText('[data-i18n="skhbbssText"]', trans.skhbbssText);
+    updateText('[data-i18n="seeSchoolMemories"]', trans.seeSchoolMemories);
     
     // Projects
     updateText('[data-i18n="gdSenseDesc"]', trans.gdSenseDesc);

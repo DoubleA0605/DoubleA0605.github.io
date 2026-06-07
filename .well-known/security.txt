@@ -2,4 +2,4 @@ Contact: mailto:andywong@gradisen.com
 Contact: https://www.linkedin.com/in/sau-yu-wong-192387375
 Expires: 2027-06-04T00:00:00.000Z
 Preferred-Languages: en
-Canonical: https://doubleA0605.github.io/.well-known/security.txt
+Canonical: https://sywongca.student.ust.hk/.well-known/security.txt

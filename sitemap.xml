@@ -4,32 +4,42 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- Homepage - primary entry point -->
   <url>
-    <loc>https://doubleA0605.github.io/</loc>
+    <loc>https://sywongca.student.ust.hk/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://doubleA0605.github.io/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://doubleA0605.github.io/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://doubleA0605.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sywongca.student.ust.hk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sywongca.student.ust.hk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sywongca.student.ust.hk/"/>
     <image:image>
-      <image:loc>https://doubleA0605.github.io/images/personal_image.png</image:loc>
+      <image:loc>https://sywongca.student.ust.hk/images/personal_image.png</image:loc>
       <image:title>Andy Wong (黃修譽) - Software Engineer &amp; Entrepreneur</image:title>
       <image:caption>Andy Wong, CEO of Gradisen, Software Engineer specializing in robotics and edge AI</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://doubleA0605.github.io/images/gradisen-logo.png</image:loc>
+      <image:loc>https://sywongca.student.ust.hk/images/gradisen-logo.png</image:loc>
       <image:title>Gradisen Logo</image:title>
       <image:caption>Gradisen - Robotics and Edge AI Solutions</image:caption>
     </image:image>
   </url>
   <!-- Certifications page -->
   <url>
-    <loc>https://doubleA0605.github.io/certifications.html</loc>
+    <loc>https://sywongca.student.ust.hk/certifications.html</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://doubleA0605.github.io/certifications.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://doubleA0605.github.io/certifications.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://doubleA0605.github.io/certifications.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sywongca.student.ust.hk/certifications.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sywongca.student.ust.hk/certifications.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sywongca.student.ust.hk/certifications.html"/>
+  </url>
+  <!-- School Memories page -->
+  <url>
+    <loc>https://sywongca.student.ust.hk/secondary-school.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sywongca.student.ust.hk/secondary-school.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sywongca.student.ust.hk/secondary-school.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sywongca.student.ust.hk/secondary-school.html"/>
   </url>
 </urlset>
