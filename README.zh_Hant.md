@@ -11,7 +11,7 @@
 
 ---
 
-🌐 *閱讀 [英文版](README.en.md)*
+🌐 *Read [English Version](README.en.md)*
 
 ---
 
