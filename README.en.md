@@ -11,7 +11,7 @@
 
 ---
 
-🌐 *Read this in [繁體中文](README.zh_Hant.md)*
+🌐 *閱讀 [繁體中文](README.zh_Hant.md)*
 
 ---
 
