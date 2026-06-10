@@ -2,44 +2,101 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <!-- Homepage - primary entry point -->
+
+  <!-- ========== EN ========== -->
   <url>
-    <loc>https://sywongca.student.ust.hk/</loc>
-    <lastmod>2026-06-07</lastmod>
+    <loc>https://sywongca.student.ust.hk/en/</loc>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sywongca.student.ust.hk/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sywongca.student.ust.hk/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sywongca.student.ust.hk/"/>
-    <image:image>
-      <image:loc>https://sywongca.student.ust.hk/images/personal_image.png</image:loc>
-      <image:title>Andy Wong (黃修譽) - Software Engineer &amp; Entrepreneur</image:title>
-      <image:caption>Andy Wong, CEO of Gradisen, Software Engineer specializing in robotics and edge AI</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://sywongca.student.ust.hk/images/gradisen-logo.png</image:loc>
-      <image:title>Gradisen Logo</image:title>
-      <image:caption>Gradisen - Robotics and Edge AI Solutions</image:caption>
-    </image:image>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sywongca.student.ust.hk/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sywongca.student.ust.hk/hk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sywongca.student.ust.hk/cn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sywongca.student.ust.hk/en/"/>
   </url>
-  <!-- Certifications page -->
   <url>
-    <loc>https://sywongca.student.ust.hk/certifications.html</loc>
-    <lastmod>2026-06-07</lastmod>
+    <loc>https://sywongca.student.ust.hk/en/certifications.html</loc>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sywongca.student.ust.hk/certifications.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sywongca.student.ust.hk/certifications.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sywongca.student.ust.hk/certifications.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sywongca.student.ust.hk/en/certifications.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sywongca.student.ust.hk/hk/certifications.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sywongca.student.ust.hk/cn/certifications.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sywongca.student.ust.hk/en/certifications.html"/>
   </url>
-  <!-- School Memories page -->
   <url>
-    <loc>https://sywongca.student.ust.hk/secondary-school.html</loc>
-    <lastmod>2026-06-07</lastmod>
+    <loc>https://sywongca.student.ust.hk/en/secondary-school.html</loc>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sywongca.student.ust.hk/secondary-school.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sywongca.student.ust.hk/secondary-school.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sywongca.student.ust.hk/secondary-school.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sywongca.student.ust.hk/en/secondary-school.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sywongca.student.ust.hk/hk/secondary-school.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sywongca.student.ust.hk/cn/secondary-school.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sywongca.student.ust.hk/en/secondary-school.html"/>
   </url>
+
+  <!-- ========== HK (zh-Hant) ========== -->
+  <url>
+    <loc>https://sywongca.student.ust.hk/hk/</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sywongca.student.ust.hk/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sywongca.student.ust.hk/hk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sywongca.student.ust.hk/cn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sywongca.student.ust.hk/en/"/>
+  </url>
+  <url>
+    <loc>https://sywongca.student.ust.hk/hk/certifications.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sywongca.student.ust.hk/en/certifications.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sywongca.student.ust.hk/hk/certifications.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sywongca.student.ust.hk/cn/certifications.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sywongca.student.ust.hk/en/certifications.html"/>
+  </url>
+  <url>
+    <loc>https://sywongca.student.ust.hk/hk/secondary-school.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sywongca.student.ust.hk/en/secondary-school.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sywongca.student.ust.hk/hk/secondary-school.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sywongca.student.ust.hk/cn/secondary-school.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sywongca.student.ust.hk/en/secondary-school.html"/>
+  </url>
+
+  <!-- ========== CN (zh-Hans) ========== -->
+  <url>
+    <loc>https://sywongca.student.ust.hk/cn/</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sywongca.student.ust.hk/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sywongca.student.ust.hk/hk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sywongca.student.ust.hk/cn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sywongca.student.ust.hk/en/"/>
+  </url>
+  <url>
+    <loc>https://sywongca.student.ust.hk/cn/certifications.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sywongca.student.ust.hk/en/certifications.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sywongca.student.ust.hk/hk/certifications.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sywongca.student.ust.hk/cn/certifications.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sywongca.student.ust.hk/en/certifications.html"/>
+  </url>
+  <url>
+    <loc>https://sywongca.student.ust.hk/cn/secondary-school.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sywongca.student.ust.hk/en/secondary-school.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sywongca.student.ust.hk/hk/secondary-school.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sywongca.student.ust.hk/cn/secondary-school.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sywongca.student.ust.hk/en/secondary-school.html"/>
+  </url>
+
 </urlset>

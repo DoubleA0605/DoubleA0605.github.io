@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" style="scroll-behavior: smooth;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Andy Wong (黄修誉, AA, DoubleA0605) 的作品集 - 软件工程师、创业家、Gradisen CEO。专精机器人、边缘AI、计算机视觉和物联网。">
+  <meta name="keywords" content="Andy Wong, Wong Sau Yu, AA, AA_65, DoubleA0605, 黃修譽, sywongca, sywongca@connect.ust.hk, Gradisen, GDSense, NovaSense, NovaForge, software engineer, robotics, edge AI, computer vision, IoT, Python, YOLO, ROS, Jetson, entrepreneur, Hong Kong, HKUST, CEO, autonomous robot, warehouse automation, 3D reconstruction, point cloud processing">
+  <meta name="author" content="Andy Wong">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:title" content="Andy Wong | 软件工程师 & 创业家">
+  <meta property="og:description" content="Andy Wong (黄修誉, AA, DoubleA0605) 的作品集 - 软件工程师、创业家、Gradisen CEO。专精机器人、边缘AI、计算机视觉和物联网。">
+  <meta property="og:type" content="profile">
+  <meta property="og:profile:first_name" content="Andy">
+  <meta property="og:profile:last_name" content="Wong">
+  <meta property="og:profile:username" content="DoubleA0605">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Andy Wong | 软件工程师 & 创业家">
+  <meta name="twitter:description" content="Andy Wong (黄修誉, AA, DoubleA0605) 的作品集 - 软件工程师、创业家、Gradisen CEO。专精机器人、边缘AI、计算机视觉和物联网。">
+  <link rel="canonical" href="https://sywongca.student.ust.hk/cn/">
+  <link rel="alternate" hreflang="en" href="https://sywongca.student.ust.hk/en/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://sywongca.student.ust.hk/hk/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://sywongca.student.ust.hk/cn/">
+  <link rel="alternate" hreflang="x-default" href="https://sywongca.student.ust.hk/en/">
+  <link rel="icon" href="../images/DoubleA_2.png" type="image/png">
+  <title>Andy Wong | 软件工程师 & 创业家</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="../script.js" defer></script>
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Andy Wong",
+    "alternateName": [
+      "Wong Sau Yu",
+      "Double A",
+      "AA",
+      "AA_65",
+      "DoubleA0605",
+      "sywongca",
+      "黃修譽",
+      "Andy Wong 黃修譽",
+      "黃修譽 Andy Wong",
+      "Sau Yu Wong",
+      "黃修譽 Wong Sau Yu",
+      "Wong Sau Yu 黃修譽"
+    ],
+    "url": "https://sywongca.student.ust.hk/cn/",
+    "email": ["andywong@gradisen.com", "sywongca@connect.ust.hk"],
+    "telephone": "+852-5572-7280",
+    "jobTitle": ["Software Engineer", "Entrepreneur", "CEO"],
+    "affiliation": [
+      {
+        "@type": "Organization",
+        "name": "Gradisen",
+        "url": "https://gradisen.com"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "The Hong Kong University of Science and Technology",
+        "alternateName": "HKUST"
+      }
+    ],
+    "knowsAbout": [
+      "Robotics",
+      "Edge AI",
+      "Computer Vision",
+      "IoT",
+      "Python",
+      "Machine Learning",
+      "ROS",
+      "NVIDIA Jetson",
+      "YOLO",
+      "Point Cloud Processing",
+      "3D Reconstruction",
+      "Autonomous Navigation",
+      "Sensor Fusion",
+      "Warehouse Automation",
+      "Gradisen",
+      "GDSense",
+      "NovaSense",
+      "NovaForge"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/sau-yu-wong-192387375",
+      "https://github.com/DoubleA0605",
+      "https://gradisen.com",
+      "mailto:sywongca@connect.ust.hk"
+    ],
+    "description": "Software Engineer and Entrepreneur specializing in robotics, edge AI, computer vision, and IoT. CEO of Gradisen. Creator of GDSense autonomous patrol robot and NovaSense 3D inventory system. Also known as AA, Double A, DoubleA0605, Wong Sau Yu, and 黃修譽."
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sywongca.student.ust.hk/cn/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://sywongca.student.ust.hk/cn/#about"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Projects",
+        "item": "https://sywongca.student.ust.hk/cn/#projects"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Organization Schema for Gradisen -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Gradisen",
+    "url": "https://gradisen.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Andy Wong",
+      "alternateName": ["Wong Sau Yu", "黃修譽", "DoubleA0605", "AA"]
+    },
+    "description": "Innovative robotics and edge AI solutions for warehouse automation",
+    "knowsAbout": ["GDSense", "autonomous robots", "warehouse automation", "edge AI"]
+  }
+  </script>
+
+  <!-- Software Application Schema for Projects -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "GDSense",
+    "description": "Autonomous patrol robot for warehouse package damage detection and SKU verification using edge AI and computer vision",
+    "creator": {
+      "@type": "Person",
+      "name": "Andy Wong",
+      "url": "https://sywongca.student.ust.hk"
+    },
+    "producer": {
+      "@type": "Organization",
+      "name": "Gradisen",
+      "url": "https://gradisen.com"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "NovaSense",
+    "description": "Advanced edge AI system for warehouse inventory counting and volumetric estimation using 3D reconstruction and point cloud processing",
+    "creator": {
+      "@type": "Person",
+      "name": "Andy Wong",
+      "url": "https://sywongca.student.ust.hk"
+    }
+  }
+  </script>
+
+  <!-- WebSite Schema with Sitelinks Searchbox -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Andy Wong | Software Engineer & Entrepreneur",
+    "alternateName": ["Andy Wong Portfolio", "DoubleA0605", "AA Portfolio"],
+    "url": "https://sywongca.student.ust.hk/cn/",
+    "description": "Portfolio of Andy Wong (黃修譽, AA, DoubleA0605) - Software Engineer, Entrepreneur, and CEO of Gradisen. Specializing in robotics, edge AI, computer vision, and IoT.",
+    "inLanguage": ["zh-Hans"],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://sywongca.student.ust.hk/?s={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- FAQPage Schema for GEO - helps AI-powered search engines understand Q&A content -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who is Andy Wong?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Andy Wong (also known as Wong Sau Yu, 黃修譽, Double A, AA, or DoubleA0605) is a Software Engineer and Entrepreneur based in Hong Kong. He is the CEO and Co-founder of Gradisen, a company specializing in robotics and edge AI solutions for warehouse automation. He is currently pursuing a BEng in Computer Engineering at HKUST."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Gradisen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gradisen is an innovative robotics and edge AI company founded by Andy Wong that develops autonomous solutions for warehouse automation. Its flagship product, GDSense, is an autonomous patrol robot that detects packaging damage and verifies SKUs using computer vision and sensor fusion technology."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What technologies does Andy Wong specialize in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Andy Wong specializes in robotics (ROS), edge AI (NVIDIA Jetson), computer vision (YOLO, Grounding DINO, SAM), 3D reconstruction (MASt3R), point cloud processing, IoT (ESP-32), and full-stack development with Python. He also has expertise in autonomous navigation, sensor fusion (LiDAR/RGB-D), and warehouse automation systems."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is GDSense?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GDSense is an autonomous patrol robot built by Andy Wong and Gradisen for small-to-medium warehouses. It uses an NVIDIA Jetson edge-AI pipeline with ROS, integrating a YOLO-based vision model, RGB-D camera, and 2D LiDAR to navigate fixed routes and detect packaging damage and verify SKUs with over 80% accuracy — all without requiring warehouse infrastructure modifications."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What projects has Andy Wong created?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Andy Wong has created several notable projects: GDSense (autonomous warehouse patrol robot), NovaSense (3D inventory counting system using edge AI and point cloud processing), and Sitting Director (smart posture-correcting chair with TensorFlow Lite and IoT). He also led Team NovaForge in the IOT Data Hackathon 2026."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ProfilePage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Andy Wong",
+      "alternateName": [
+        "Wong Sau Yu",
+        "Double A",
+        "AA",
+        "AA_65",
+        "DoubleA0605",
+        "sywongca",
+        "黃修譽",
+        "Andy Wong 黃修譽",
+        "黃修譽 Andy Wong",
+        "Sau Yu Wong",
+        "黃修譽 Wong Sau Yu",
+        "Wong Sau Yu 黃修譽"
+      ],
+      "url": "https://sywongca.student.ust.hk/cn/",
+      "image": "https://sywongca.student.ust.hk/images/personal_image.png",
+      "email": ["andywong@gradisen.com", "sywongca@connect.ust.hk"],
+      "telephone": "+852-5572-7280",
+      "jobTitle": ["Software Engineer", "Entrepreneur", "CEO"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Gradisen",
+        "url": "https://gradisen.com"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "The Hong Kong University of Science and Technology",
+          "alternateName": "HKUST"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "HKU SPACE"
+        },
+        {
+          "@type": "School",
+          "name": "SKH Bishop Baker Secondary School",
+          "alternateName": "聖公會白約翰會督中學"
+        }
+      ],
+      "knowsAbout": [
+        "Robotics",
+        "Edge AI",
+        "Computer Vision",
+        "IoT",
+        "Python",
+        "Machine Learning",
+        "ROS",
+        "NVIDIA Jetson",
+        "YOLO",
+        "3D Reconstruction",
+        "Point Cloud Processing",
+        "Autonomous Navigation",
+        "Sensor Fusion",
+        "Warehouse Automation"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/sau-yu-wong-192387375",
+        "https://github.com/DoubleA0605",
+        "https://gradisen.com",
+        "mailto:sywongca@connect.ust.hk"
+      ],
+      "description": "Software Engineer and Entrepreneur specializing in robotics, edge AI, computer vision, and IoT. CEO of Gradisen. Creator of GDSense autonomous patrol robot and NovaSense 3D inventory system."
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../cn/index.html" class="logo">&lt;Andy<span>Wong</span>/&gt;</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <div class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#about"><i class="fas fa-user"></i> <span data-i18n="navAbout">关于</span></a></li>
+          <li><a href="#education"><i class="fas fa-graduation-cap"></i> <span data-i18n="navEducation">教育</span></a></li>
+          <li><a href="#certifications"><i class="fas fa-certificate"></i> <span data-i18n="navCertifications">认证</span></a></li>
+          <li><a href="#projects"><i class="fas fa-code"></i> <span data-i18n="navProjects">项目</span></a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> <span data-i18n="navContact">联系</span></a></li>
+        </ul>
+        <div class="lang-switcher">
+          <a href="../en/index.html" class="lang-btn" hreflang="en">EN</a>
+          <a href="../hk/index.html" class="lang-btn" hreflang="zh-Hant">繁</a>
+          <a href="../cn/index.html" class="lang-btn lang-active" hreflang="zh-Hans">简</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" itemscope itemtype="https://schema.org/ProfilePage">
+    
+    <section id="about" class="hero" style="margin-top: 4rem;" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 data-i18n="heroTitle" itemprop="name">黄修誉</h1>
+          <p class="aka" data-i18n="heroAka">aka Double A</p>
+          <p class="lead" data-i18n="heroSubtitle"><span itemprop="jobTitle">Software Engineer</span> & <span itemprop="jobTitle">Entrepreneur</span> | CPEG @HKUST </p>
+          <p class="lead" data-i18n="heroSubtitle2">CEO @<span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization"><span itemprop="url">Gradisen</span></span></p>
+
+          <div class="hero-cta" style="margin-top:1rem;">
+            <a class="btn" href="#projects"><i class="fas fa-rocket"></i> <span data-i18n="viewProjects">查看项目</span></a>
+            <a class="btn btn-ghost" href="#contact"><i class="fas fa-paper-plane"></i> <span data-i18n="getInTouch">联系我们</span></a>
+          </div>
+
+          <div class="card" style="margin-top:1.5rem;">
+            <h3 data-i18n="aboutMeTitle">关于我</h3>
+            <p style="margin-top: 0.5rem;" data-i18n="aboutMeText" itemprop="description">我是香港科技大学计算机工程系的学生。毕业于HKU SPACE，获得副学士学位，成绩优异。精通Python、云计算、物联网和边缘人工智能。Gradisen的联合创始人兼首席执行官，积极开发实际产品。香港圣约翰救伤队少青团的见习队领袖。</p>
+          </div>
+        </div>
+        <div class="hero-aside">
+          <div class="hero-avatar highlight">
+            <img src="../images/personal_image.png" alt="Andy Wong (黃修譽) - Software Engineer & Entrepreneur" width="320" height="320" loading="eager" decoding="async" itemprop="image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2><i class="fas fa-book-open"></i> <span data-i18n="educationTitle">教育</span></h2>
+      
+      <div class="card" itemscope itemtype="https://schema.org/EducationalOccupationalProgram">
+        <div class="card-meta"><time datetime="2025">2025</time> — <time datetime="2028">2028</time></div>
+        <h3 itemprop="provider" itemscope itemtype="https://schema.org/CollegeOrUniversity"><span itemprop="name">The Hong Kong University of Science and Technology</span></h3>
+        <p style="color: var(--text-main); margin-bottom: 0.5rem;" data-i18n="hkustDegree" itemprop="name">工程学学士 - 计算机工程</p>
+        <p data-i18n="hkustText">正在攻读计算机工程学位。</p>
+      </div>
+
+      <div class="card" itemscope itemtype="https://schema.org/EducationalOccupationalProgram">
+        <div class="card-meta"><time datetime="2023">2023</time> — <time datetime="2025">2025</time></div>
+        <h3 itemprop="provider" itemscope itemtype="https://schema.org/CollegeOrUniversity"><span itemprop="name">HKU SPACE</span></h3>
+        <p style="color: var(--text-main); margin-bottom: 0.5rem;" data-i18n="hkuspaceDegree" itemprop="name">副学位 - 工程（计算机科学）</p>
+        <p data-i18n="hkuspaceText"><strong>Graduate with Merit, CGPA 3.61, Principal's Honours List 2024-2025</strong> </p>
+      </div>
+
+      <div class="card" itemscope itemtype="https://schema.org/EducationalOccupationalProgram">
+        <div class="card-meta"><time datetime="2017">2017</time> — <time datetime="2023">2023</time></div>
+        <h3 itemprop="provider" itemscope itemtype="https://schema.org/School"><span itemprop="name">SKH Bishop Baker Secondary School</span></h3>
+        <p style="color: var(--text-main); margin-bottom: 0.5rem;" data-i18n="skhbbssName" itemprop="name">圣公会白约翰会督中学</p>
+        <p data-i18n="skhbbssText">香港中学文凭试毕业生。积极参与STEM项目，包括MiTeen Academy气垫弹珠台和ICanCode机器人竞赛。</p>
+        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+          <a href="../cn/secondary-school.html" class="btn btn-ghost" style="width: 100%; text-align: center; justify-content: center;">
+            <i class="fas fa-book-open"></i> <span data-i18n="seeSchoolMemories">查看校园回忆</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2><i class="fas fa-award"></i> <span data-i18n="certificationsTitle">许可证和认证</span></h2>
+      
+      <div class="card">
+        <div class="card-meta">Issued May 2026</div>
+        <h3>Entrepreneurship 101 Training Program</h3>
+        <p>HKUST Entrepreneurship Center</p>
+      </div>
+
+      <div class="card">
+        <div class="card-meta">Issued Feb 2026</div>
+        <h3>IOT Data Hackathon 2026 – Team NovaForge</h3>
+        <p>GSI Hong Kong</p>
+      </div>
+
+      <div class="card">
+        <div class="card-meta">Issued June, 2026</div>
+        <h3>Introduction to Computer Vision</h3>
+        <p>University of Colorado Boulder</p>
+      </div>
+
+      <div class="card">
+        <div class="card-meta">Issued Jun 2026</div>
+        <h3>Project Management Principles and Practices Specialization</h3>
+        <p>University of California, Irvine</p>
+      </div>
+
+      <div class="card">
+        <div class="card-meta">Issued Jun 2026</div>
+        <h3>Protecting Business Innovations via Strategy</h3>
+        <p>HKUST</p>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="../cn/certifications.html" class="btn"><i class="fas fa-arrow-right"></i> <span data-i18n="seeAllCertifications">查看所有认证</span></a>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2><i class="fas fa-cube"></i> <span data-i18n="projectsTitle">项目</span></h2>
+
+      <div class="card project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
+        <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white; min-height: 180px; border-radius: 8px; margin-bottom: 1rem;">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="card-meta"><time datetime="2026-04">Apr 2026</time> — Present</div>
+        <h3 style="display: flex; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <i class="fas fa-check-circle" style="color: var(--accent-primary); font-size: 1.1rem;"></i> <span itemprop="name">GDSense</span>
+          <a href="https://gradisen.com" target="_blank" rel="noopener noreferrer" class="btn-gradisen" title="Visit Gradisen">
+            <img src="../images/gradisen-logo.png" alt="Gradisen" class="gradisen-logo" loading="lazy" decoding="async">
+          </a>
+        </h3>
+        <p style="margin-bottom: 1rem; margin-top: 0.5rem;" data-i18n="gdSenseDesc" itemprop="description">为中小型仓库设计的自主巡逻机器人，用于检测包装损伤和验证SKU，无需基础设施改造。基于NVIDIA Jetson边缘AI管道和ROS构建，集成了基于YOLO的视觉模型、RGB-D摄像头和2D激光雷达，以超过80%的准确度沿着固定路线导航并识别外部结构异常。</p>
+        <div>
+          <span class="tech-tag"><i class="fas fa-microchip"></i> Robotics (ROS)</span>
+          <span class="tech-tag"><i class="fas fa-brain"></i> Edge AI (Jetson)</span>
+          <span class="tech-tag"><i class="fas fa-eye"></i> Computer Vision (YOLO)</span>
+          <span class="tech-tag"><i class="fas fa-database"></i> Sensor Fusion (LiDAR/RGB-D)</span>
+          <span class="tech-tag"><i class="fas fa-compass"></i> Autonomous Navigation</span>
+        </div>
+      </div>
+
+      <div class="card project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
+        <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white; min-height: 180px; border-radius: 8px; margin-bottom: 1rem;">
+          <i class="fas fa-cube"></i>
+        </div>
+        <div class="card-meta"><time datetime="2025-12">Dec 2025</time> — <time datetime="2026-04">Apr 2026</time></div>
+        <h3><i class="fas fa-check-circle" style="color: var(--accent-primary); font-size: 1.1rem;"></i> <span itemprop="name">NovaSense</span></h3>
+        <p style="margin-bottom: 1rem;" data-i18n="novaSenseDesc" itemprop="description">用于仓库库存计数和体积估计的先进边缘AI系统。从YOLO边界框模型发展而来，已演变为结合Grounding DINO、SAM和MASt3R的复杂2D-3D空间融合管道。设计了自定义点云去噪引擎和高程图体素化，以准确测量不规则货物形状。</p>
+        <div>
+          <span class="tech-tag"><i class="fas fa-cube"></i> 3D Reconstruction</span>
+          <span class="tech-tag"><i class="fas fa-network-wired"></i> Spatial Fusion</span>
+          <span class="tech-tag"><i class="fas fa-image"></i> Computer Vision</span>
+          <span class="tech-tag"><i class="fas fa-bolt"></i> Edge AI</span>
+          <span class="tech-tag"><i class="fas fa-cloud"></i> Point Cloud Processing</span>
+        </div>
+      </div>
+
+      <div class="card project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
+        <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white; min-height: 180px; border-radius: 8px; margin-bottom: 1rem;">
+          <i class="fas fa-chair"></i>
+        </div>
+        <div class="card-meta"><time datetime="2022-09">Sep 2022</time> — <time datetime="2023-05">May 2023</time></div>
+        <h3><i class="fas fa-check-circle" style="color: var(--accent-primary); font-size: 1.1rem;"></i> <span itemprop="name">Sitting Director</span></h3>
+        <p style="margin-bottom: 1rem;" data-i18n="sittingDirectorDesc" itemprop="description">使用ESP-32、FSR和红外传感器的智能椅系统，可实时检测和纠正不良姿势。通过TensorFlow Lite和Google MoveNet实现设备上姿势估计，通过Firebase和BLE将数据同步到自定义Android应用程序。设计3D打印机械部件用于物理姿势调整。</p>
+        <div>
+          <span class="tech-tag"><i class="fas fa-microchip"></i> IoT (ESP-32)</span>
+          <span class="tech-tag"><i class="fas fa-brain"></i> TensorFlow Lite</span>
+          <span class="tech-tag"><i class="fas fa-mobile-alt"></i> Android (Java)</span>
+          <span class="tech-tag"><i class="fas fa-database"></i> Firebase</span>
+          <span class="tech-tag"><i class="fas fa-cog"></i> Hardware Integration</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2><i class="fas fa-handshake"></i> <span data-i18n="contactTitle">联系</span></h2>
+      <div class="contact-icons" itemscope itemtype="https://schema.org/ContactPoint">
+        <meta itemprop="contactType" content="Professional contact">
+        <a href="mailto:andywong@gradisen.com" class="icon-link" title="Email" itemprop="email">
+          <i class="fas fa-envelope"></i>
+          <span class="sr-only">Email Andy Wong</span>
+        </a>
+
+        <a href="mailto:sywongca@connect.ust.hk" class="icon-link" title="HKUST Email">
+          <i class="fas fa-building-columns"></i>
+          <span class="sr-only">HKUST Email: sywongca@connect.ust.hk</span>
+        </a>
+        
+        <a href="https://wa.me/85255727280" target="_blank" rel="noopener noreferrer" class="icon-link" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+          <span class="sr-only">WhatsApp Andy Wong</span>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/sau-yu-wong-192387375" target="_blank" rel="noopener noreferrer" class="icon-link" title="LinkedIn" itemprop="sameAs">
+          <i class="fab fa-linkedin"></i>
+          <span class="sr-only">LinkedIn Profile</span>
+        </a>
+        
+        <a href="https://github.com/DoubleA0605" target="_blank" rel="noopener noreferrer" class="icon-link" title="GitHub" itemprop="sameAs">
+          <i class="fab fa-github"></i>
+          <span class="sr-only">GitHub Profile</span>
+        </a>
+
+        <a href="https://gradisen.com" target="_blank" rel="noopener noreferrer" class="icon-link" title="Gradisen">
+          <img src="../images/gradisen-logo.png" alt="Gradisen" class="gradisen-logo-icon" loading="lazy" decoding="async">
+          <span class="sr-only">Gradisen Website</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer itemscope itemtype="https://schema.org/WPFooter">
+    <div class="container">
+      <small>© <time datetime="2026">2026</time> <span itemprop="copyrightHolder">Andy Wong</span> · <span itemprop="description">Personal portfolio showcasing robotics, edge AI, and software engineering projects</span></small>
+    </div>
+  </footer>
+
+</body>
+</html>
