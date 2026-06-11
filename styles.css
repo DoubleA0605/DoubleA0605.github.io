@@ -591,6 +591,7 @@ blockquote p:last-child {
 }
 
 .project-image {
+  min-height: 180px;
   animation: gradientShift 3s ease infinite;
   background-size: 200% 200%;
 }
