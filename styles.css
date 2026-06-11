@@ -356,15 +356,25 @@ section {
   filter: drop-shadow(0 8px 12px rgba(56, 189, 248, 0.4));
 }
 
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* School Memories Page */
 .school-logo-img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
   filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
 }
 
 .project-image-img {
   display: block;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -655,8 +665,11 @@ footer {
   .nav-links { display: flex; flex-direction: column; gap: 0.6rem; }
   .lang-switcher { padding-left: 0; border-left: none; }
   .hero-grid { grid-template-columns: 1fr; }
-  .hero-aside { order: -1; position: static; max-width: 240px; margin: 0 auto 1rem; }
+  .hero-aside { order: -1; position: static; max-width: min(240px, 80vw); margin: 0 auto 1rem; }
+  .hero-avatar img { width: 100%; height: auto; aspect-ratio: 1/1; }
   .projects-grid { grid-template-columns: 1fr; }
+  .project-image { min-height: 140px; }
+  .school-logo-img { width: 100% !important; max-width: 100% !important; }
 }
 
 /* ---------------------------------
