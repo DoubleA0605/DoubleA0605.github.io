@@ -9,13 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Prevent horizontal overscroll on mobile devices
     let touchStartX = 0;
+    let touchStartY = 0; 
     document.addEventListener('touchstart', (e) => {
         touchStartX = e.touches[0].pageX;
+        touchStartY = e.touches[0].pageY; 
     }, { passive: true });
     
     document.addEventListener('touchmove', (e) => {
         const deltaX = Math.abs(e.touches[0].pageX - touchStartX);
-        const deltaY = Math.abs(e.touches[0].pageY - touchStartX);
+        const deltaY = Math.abs(e.touches[0].pageY - touchStartY); 
         // If primarily horizontal swipe, prevent it
         if (deltaX > deltaY && deltaX > 10) {
             e.preventDefault();

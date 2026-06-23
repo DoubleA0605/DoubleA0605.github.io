@@ -76,7 +76,6 @@ h2 {
   font-size: 1.8rem;
   font-weight: 700;
   margin: 3rem 0 1.5rem;
-  display: inline-block;
   border-bottom: 2px solid var(--accent-primary);
   padding-bottom: 0.3rem;
   transition: all 0.3s ease;
@@ -346,8 +345,6 @@ section {
 .icon-link:has(.gradisen-logo-icon):hover .gradisen-logo-icon {
   filter: brightness(1.4) drop-shadow(0 0 8px rgba(255, 165, 0, 0.5));
 }
-
-
 
 .contact-icon {
   font-size: 2.5rem;
