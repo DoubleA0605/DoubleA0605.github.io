@@ -23,6 +23,7 @@ html {
   overflow-x: hidden;
   overscroll-behavior-x: none;
   touch-action: pan-y;
+  position: relative;
 }
 
 body {
@@ -376,6 +377,7 @@ p, h1, h2, h3, h4, h5, h6, a, li, blockquote, .card-meta {
 /* Ensure cards stay within viewport (container already has max-width:900px via its own rule) */
 section, .card, .navbar, footer, main {
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* School Memories Page */
