@@ -7,6 +7,21 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Portfolio successfully loaded.');
     
+    // Prevent horizontal overscroll on mobile devices
+    let touchStartX = 0;
+    document.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].pageX;
+    }, { passive: true });
+    
+    document.addEventListener('touchmove', (e) => {
+        const deltaX = Math.abs(e.touches[0].pageX - touchStartX);
+        const deltaY = Math.abs(e.touches[0].pageY - touchStartX);
+        // If primarily horizontal swipe, prevent it
+        if (deltaX > deltaY && deltaX > 10) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+    
     // Mobile menu toggle
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
