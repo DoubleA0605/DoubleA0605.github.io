@@ -47,9 +47,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
 
     // Scroll spy - highlight active section link
+    // Works with both normal scrolling and body-as-scroll-container (mobile fix)
+    const scrollContainer = document.scrollingElement || document.documentElement;
     const sections = document.querySelectorAll('section[id]');
     function onScroll() {
-        const scrollPos = window.scrollY + 120;
+        // Use the actual scroll container's scroll position
+        const scrollEl = (document.body.style.position === 'fixed') ? document.body : scrollContainer;
+        const scrollPos = (scrollEl.scrollTop || window.scrollY) + 120;
         sections.forEach(sec => {
             const top = sec.offsetTop;
             const bottom = top + sec.offsetHeight;
@@ -65,6 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     window.addEventListener('scroll', onScroll, { passive: true });
+    // Also listen on body for mobile (body is the scroll container when position:fixed)
+    document.body.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
 
     // Certification search and filter functionality
