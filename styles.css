@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background: var(--bg-dark);
@@ -26,6 +30,7 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
+  max-width: 100vw;
 }
 
 .container {
@@ -206,7 +211,8 @@ section {
   z-index: 1;
 }
 
-.card:has(.btn) {
+/* Only override overflow when hovering to prevent horizontal scroll on mobile */
+.card:has(.btn):hover {
   overflow: visible;
 }
 
@@ -360,6 +366,16 @@ section {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Prevent long unbreakable strings from causing horizontal overflow */
+p, h1, h2, h3, h4, h5, h6, a, li, blockquote, .card-meta {
+  overflow-wrap: break-word;
+}
+
+/* Ensure all cards and sections stay within viewport */
+section, .container, .card, .navbar, footer, main {
+  max-width: 100%;
 }
 
 /* School Memories Page */
