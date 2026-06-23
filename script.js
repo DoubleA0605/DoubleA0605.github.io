@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Portfolio successfully loaded.');
     
     // Prevent horizontal overscroll on mobile devices
+    // Method 1: Block horizontal touch gestures
     let touchStartX = 0;
     let touchStartY = 0; 
     document.addEventListener('touchstart', (e) => {
@@ -21,6 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
         // If primarily horizontal swipe, prevent it
         if (deltaX > deltaY && deltaX > 10) {
             e.preventDefault();
+        }
+    }, { passive: false });
+
+    // Method 2: Force reset any horizontal scroll that somehow occurs
+    let resettingScroll = false;
+    window.addEventListener('scroll', () => {
+        if (window.scrollX !== 0 && !resettingScroll) {
+            resettingScroll = true;
+            requestAnimationFrame(() => {
+                window.scrollTo(0, window.scrollY);
+                resettingScroll = false;
+            });
         }
     }, { passive: false });
     
@@ -47,13 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
 
     // Scroll spy - highlight active section link
-    // Works with both normal scrolling and body-as-scroll-container (mobile fix)
-    const scrollContainer = document.scrollingElement || document.documentElement;
     const sections = document.querySelectorAll('section[id]');
     function onScroll() {
-        // Use the actual scroll container's scroll position
-        const scrollEl = (document.body.style.position === 'fixed') ? document.body : scrollContainer;
-        const scrollPos = (scrollEl.scrollTop || window.scrollY) + 120;
+        const scrollPos = window.scrollY + 120;
         sections.forEach(sec => {
             const top = sec.offsetTop;
             const bottom = top + sec.offsetHeight;
@@ -69,8 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     window.addEventListener('scroll', onScroll, { passive: true });
-    // Also listen on body for mobile (body is the scroll container when position:fixed)
-    document.body.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
 
     // Certification search and filter functionality
