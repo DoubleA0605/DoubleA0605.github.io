@@ -26,7 +26,9 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <title>Andy Wong | Software Engineer & Entrepreneur</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="script.js" defer></script>
   
@@ -170,6 +172,27 @@
       "@type": "Person",
       "name": "Andy Wong",
       "url": "https://sywongca.student.ust.hk"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Gradisen SMART",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Android, iOS, Web",
+    "description": "Intelligent property-management work-assignment platform: an offline-first native mobile app for frontline staff, a privileged web portal for supervisors, and an on-premise server with five-tier RBAC, automatic material preselection from historical work orders, real-time inventory deduction, and configurable safety risk triggers such as ladder height above 1.8 m or electrical work above 400 W.",
+    "creator": {
+      "@type": "Person",
+      "name": "Andy Wong",
+      "url": "https://sywongca.student.ust.hk"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Gradisen",
+      "url": "https://gradisen.com"
     }
   }
   </script>
@@ -350,6 +373,7 @@
     <section id="about" class="hero" style="margin-top: 4rem;" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person">
       <div class="hero-grid">
         <div class="hero-content">
+                    <div class="hero-status"><span class="status-dot"></span> <span data-i18n="heroStatus">Open to opportunities</span></div>
           <h1 data-i18n="heroTitle" itemprop="name">Andy Wong</h1>
           <p class="aka" data-i18n="heroAka">aka Double A</p>
           <p class="lead" data-i18n="heroSubtitle"><span itemprop="jobTitle">Software Engineer</span> & <span itemprop="jobTitle">Entrepreneur</span> | CPEG @HKUST </p>
@@ -373,11 +397,33 @@
           </div>
         </div>
       </div>
+          <div class="scroll-cue" aria-hidden="true">
+        <span class="scroll-cue__mouse"></span>
+        <span data-i18n="scrollCue">Scroll</span>
+      </div>
     </section>
+
+    <div class="tech-marquee" aria-hidden="true">
+      <div class="tech-marquee__track">
+          <span>ROS</span>
+          <span>NVIDIA Jetson</span>
+          <span>YOLO</span>
+          <span>Grounding DINO</span>
+          <span>MASt3R</span>
+          <span>Point Cloud</span>
+          <span>ESP-32</span>
+          <span>TensorFlow Lite</span>
+          <span>Edge AI</span>
+          <span>Offline-First</span>
+          <span>RBAC</span>
+          <span>On-Premise</span>
+      </div>
+    </div>
 
     <section id="education">
       <h2><i class="fas fa-book-open"></i> <span data-i18n="educationTitle">Education</span></h2>
       
+      <div class="timeline">
       <div class="card" itemscope itemtype="https://schema.org/EducationalOccupationalProgram">
         <div class="card-meta"><time datetime="2025">2025</time> — <time datetime="2028">2028</time></div>
         <h3 itemprop="provider" itemscope itemtype="https://schema.org/CollegeOrUniversity"><span itemprop="name">The Hong Kong University of Science and Technology</span></h3>
@@ -403,11 +449,13 @@
           </a>
         </div>
       </div>
+          </div>
     </section>
 
     <section id="certifications">
       <h2><i class="fas fa-award"></i> <span data-i18n="certificationsTitle">Licenses & Certifications</span></h2>
       
+      <div class="cert-grid">
       <div class="card">
         <div class="card-meta">Issued May 2026</div>
         <h3>Entrepreneurship 101 Training Program</h3>
@@ -438,6 +486,8 @@
         <p>HKUST</p>
       </div>
 
+            </div>
+
       <div style="text-align: center; margin-top: 2rem;">
         <a href="certifications.html" class="btn"><i class="fas fa-arrow-right"></i> <span data-i18n="seeAllCertifications">See All Certifications</span></a>
       </div>
@@ -445,6 +495,73 @@
 
     <section id="projects">
       <h2><i class="fas fa-cube"></i> <span data-i18n="projectsTitle">Projects</span></h2>
+
+      <!-- Gradisen SMART -->
+      <article class="card project-card project-card--featured" itemscope itemtype="https://schema.org/SoftwareApplication">
+        <div class="project-image project-image--smart">
+          <span class="project-badge"><i class="fas fa-star"></i> <span data-i18n="smartFeatured">Featured</span></span>
+          <div class="smart-banner">
+            <p class="smart-eyebrow" data-i18n="smartEyebrow">Property Operations Platform</p>
+            <p class="smart-title">Gradisen <span>SMART</span></p>
+            <div class="smart-devices">
+              <span class="smart-device"><i class="fas fa-mobile-alt"></i> <span data-i18n="smartDeviceMobile">Mobile</span></span>
+              <span class="smart-device"><i class="fas fa-desktop"></i> <span data-i18n="smartDevicePortal">Portal</span></span>
+              <span class="smart-device"><i class="fas fa-server"></i> <span data-i18n="smartDeviceServer">On-Premise</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="card-meta">
+          <time datetime="2026-06">Jun 2026</time> — <span data-i18n="present">Present</span>
+          <span class="meta-live"><span class="pulse-dot"></span><span data-i18n="smartStatus">Live</span></span>
+        </div>
+        <h3>
+          <i class="fas fa-check-circle" style="color: var(--accent-primary); font-size: 1.1rem;"></i>
+          <span itemprop="name">Gradisen <span class="gradient-word">SMART</span></span>
+          <a href="https://gradisen.com" target="_blank" rel="noopener noreferrer" class="btn-gradisen" title="Visit Gradisen">
+            <img src="images/gradisen-logo.png" alt="Gradisen" class="gradisen-logo" loading="lazy" decoding="async">
+          </a>
+        </h3>
+        <p class="project-lead" data-i18n="smartDesc" itemprop="description">Gradisen SMART is an intelligent property management work assignment system that digitizes maintenance, inventory, safety, and cross-department coordination. It includes a native mobile app for frontline staff and a privileged web portal for supervisors and administrators, backed by an on-premise server. Connectivity supports both private intranet and public internet access, while the mobile app remains offline-first: users can create and update work orders without connectivity, with delta synchronization and conflict resolution on reconnection.</p>
+        <p class="project-lead" itemprop="description">A five-tier RBAC hierarchy enforces server-authoritative permissions across both clients. Key features include automatic material preselection from historical work orders, real-time inventory deduction on completion, and configurable risk-assessment triggers (e.g., ladder height &gt;1.8 m, electrical work &gt;400 W) requiring supervisor approval. Licensing uses a multi-factor hardware fingerprint with tolerance for legitimate upgrades, and all operational data and attachments are stored locally on the server. Pilot deployments confirmed reduced manual reporting effort, improved inventory accuracy, and stronger safety compliance. Iterative feedback simplified the mobile UI and improved sync reliability.</p>
+        <div class="smart-features">
+          <div class="smart-feature">
+            <i class="fas fa-sync-alt"></i>
+            <div>
+              <h4 data-i18n="smartFeature1Title">Offline-First Sync</h4>
+              <p data-i18n="smartFeature1Text">Create and update work orders with zero connectivity; delta sync and conflict resolution kick in on reconnection.</p>
+            </div>
+          </div>
+          <div class="smart-feature">
+            <i class="fas fa-user-shield"></i>
+            <div>
+              <h4 data-i18n="smartFeature2Title">Five-Tier RBAC</h4>
+              <p data-i18n="smartFeature2Text">A server-authoritative permission hierarchy enforced identically across the mobile app and the web portal.</p>
+            </div>
+          </div>
+          <div class="smart-feature">
+            <i class="fas fa-boxes"></i>
+            <div>
+              <h4 data-i18n="smartFeature3Title">Smart Inventory</h4>
+              <p data-i18n="smartFeature3Text">Materials auto-preselected from historical work orders, then deducted in real time the moment a job is closed.</p>
+            </div>
+          </div>
+          <div class="smart-feature">
+            <i class="fas fa-exclamation-triangle"></i>
+            <div>
+              <h4 data-i18n="smartFeature4Title">Safety Guardrails</h4>
+              <p data-i18n="smartFeature4Text">Configurable risk triggers — ladders above 1.8 m, electrical work above 400 W — route jobs for supervisor approval.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="tech-tag"><i class="fas fa-mobile-alt"></i> Native Mobile App</span>
+          <span class="tech-tag"><i class="fas fa-desktop"></i> Web Portal</span>
+          <span class="tech-tag"><i class="fas fa-sync-alt"></i> Offline-First Sync</span>
+          <span class="tech-tag"><i class="fas fa-user-shield"></i> Five-Tier RBAC</span>
+          <span class="tech-tag"><i class="fas fa-server"></i> On-Premise Server</span>
+          <span class="tech-tag"><i class="fas fa-fingerprint"></i> Hardware Licensing</span>
+        </div>
+      </article>
 
       <div class="card project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
         <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white; border-radius: 8px; margin-bottom: 1rem;">

@@ -93,6 +93,13 @@ MiTeen Academy was the school-based STEAM innovation club where I spent 5 years 
 
 ## 🚀 Projects
 
+### 🏢 Gradisen SMART — Intelligent Property Management Platform
+*Jun 2026 — Present · [Gradisen](https://gradisen.com)*
+
+An intelligent property-management work-assignment system that digitises maintenance, inventory, safety, and cross-department coordination. A **native mobile app** for frontline staff and a **privileged web portal** for supervisors run against an **on-premise server**, reachable over a private intranet or the public internet. The app is **offline-first** — work orders can be created and updated without connectivity, with delta sync and conflict resolution on reconnection — while a **five-tier RBAC** hierarchy enforces server-authoritative permissions across both clients. Key features include automatic material preselection from historical work orders, real-time inventory deduction on completion, and configurable risk-assessment triggers (ladder height > 1.8 m, electrical work > 400 W) that require supervisor approval. Licensing uses a multi-factor hardware fingerprint with tolerance for legitimate upgrades, and all operational data and attachments stay on the server. Pilot deployments confirmed reduced manual reporting effort, improved inventory accuracy, and stronger safety compliance.
+
+`Native Mobile App` `Web Portal` `Offline-First Sync` `Five-Tier RBAC` `On-Premise Server` `Hardware Licensing`
+
 ### 🦾 GDSense — Autonomous Warehouse Patrol Robot
 *Apr 2026 — Present · [Gradisen](https://gradisen.com)*
 

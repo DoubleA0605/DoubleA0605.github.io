@@ -40,6 +40,7 @@ I am a motivated **Computer Engineering student at HKUST**, passionate about rob
 
 ## 🚀 Projects / 項目
 
+- 🏢 **Gradisen SMART** — Offline-first property-management work-assignment platform (mobile app + web portal + on-premise server)
 - 🦾 **GDSense** — Autonomous warehouse patrol robot (ROS + Jetson + YOLO)
 - 📦 **NovaSense** — 3D inventory counting via edge AI & point cloud processing
 - 🪑 **Sitting Director** — Smart posture-correcting chair (ESP-32 + TensorFlow Lite)
